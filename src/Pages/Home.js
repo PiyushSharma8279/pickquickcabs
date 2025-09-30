@@ -8,6 +8,7 @@ import NumbersSpeak from '../Components/Home/NumbersSpeak'
 import TaxiModels from '../Components/Home/TaxiModels'
 import WhyChooseUs from '../Components/Home/WhyChooseUs'
 import Footer from '../Components/Footer/Footer'
+import TaxiFares from '../Components/Home/TaxiFares'
 
 function Home() {
     return (
@@ -20,6 +21,7 @@ function Home() {
         <NumbersSpeak/>
         <TaxiModels/>
         <WhyChooseUs/>
+        <TaxiFares/>
         <Footer/>
     
         

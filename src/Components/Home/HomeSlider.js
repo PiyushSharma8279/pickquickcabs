@@ -4,7 +4,7 @@ function HomeSlider() {
   return (
     <>
       <div
-        className="h-[80vh] md:h-[90vh] flex items-center justify-center text-center text-white px-4"
+        className="h-[80vh] md:h-[90vh] mt-32 flex items-center justify-center text-center text-white px-4"
         style={{
           backgroundImage:
             "url('https://old3.commonsupport.com/wp/conexi/wp-content/uploads/2020/04/slider-1-2.jpg')",

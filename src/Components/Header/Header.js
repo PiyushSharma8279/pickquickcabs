@@ -17,7 +17,7 @@ function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div className="absolute top-0 left-0 w-full flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-6 px-4 sm:px-6 py-6 bg-black text-white text-xs sm:text-sm z-20">
+      <div className="fixed top-0 left-0 w-full flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-6 px-4 sm:px-6 py-6 bg-black text-white text-xs sm:text-sm z-20">
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
           <span className="flex items-center gap-2">
             <FaUser /> Customer Sign In
@@ -26,7 +26,7 @@ function Header() {
             <FaEnvelope /> needhelp@conexi.com
           </span>
         </div>
-        <div className="flex gap-3 sm:gap-4 justify-center sm:justify-end">
+        <div className="flex  gap-4  md:justify-end">
           <FaTwitter />
           <FaFacebookF />
           <FaYoutube />
@@ -35,7 +35,7 @@ function Header() {
       </div>
 
       
-      <div className="bg-yellow-400 flex items-center gap-28 px-4 sm:px-8 py-4 relative z-30 mt-16">
+      <div className="bg-yellow-400 fixed top-0 left-0 right-0 flex items-center gap-28 px-4 sm:px-8 py-4  z-30 md:mt-16 mt-24">
         
         <div className="flex items-center gap-2 font-bold text-lg sm:text-xl">
           <img

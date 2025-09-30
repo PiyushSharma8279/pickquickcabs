@@ -1,0 +1,65 @@
+import React from "react";
+import { FaShieldAlt, FaUserCheck, FaClipboardList } from "react-icons/fa";
+
+const features = [
+  {
+    icon: <FaShieldAlt className="text-black text-5xl" />,
+    title: "Safety Guarantee",
+    desc: "Lorem ipsum dolor sit amet cons adipisci elit vehicula est non lac at quam.",
+  },
+  {
+    icon: <FaUserCheck className="text-black text-5xl" />,
+    title: "DBS Cleared Drivers",
+    desc: "Lorem ipsum dolor sit amet cons adipisci elit vehicula est non lac at quam.",
+  },
+  {
+    icon: <FaClipboardList className="text-black text-5xl" />,
+    title: "Free Quotation",
+    desc: "Lorem ipsum dolor sit amet cons adipisci elit vehicula est non lac at quam.",
+  },
+];
+
+function WhyChooseUs() {
+  return (
+    <div className="bg-black text-white py-20 px-6">
+      {/* Heading */}
+      <div className="text-center mb-12">
+        <p className="uppercase tracking-wide text-sm text-gray-400">
+          Conexi benefit list
+        </p>
+        <h2 className="text-4xl sm:text-5xl font-bold">Why choose us</h2>
+      </div>
+
+      {/* Feature Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        {features.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center text-center p-8"
+          >
+            {/* Yellow Circle with Icon */}
+            <div className="w-24 h-24 rounded-full bg-yellow-400 flex items-center justify-center mb-6 shadow-lg">
+              {item.icon}
+            </div>
+
+            {/* Title */}
+            <h3 className="text-xl font-bold mb-4">{item.title}</h3>
+
+            {/* Description */}
+            <p className="text-gray-400 mb-6">{item.desc}</p>
+
+            {/* Link */}
+            <a
+              href="#"
+              className="font-semibold uppercase text-sm tracking-wide hover:text-yellow-400 transition"
+            >
+              Read More
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default WhyChooseUs;

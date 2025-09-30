@@ -6,6 +6,8 @@ import BookingForm from '../Components/Home/booking'
 import Content from '../Components/Home/Content'
 import NumbersSpeak from '../Components/Home/NumbersSpeak'
 import TaxiModels from '../Components/Home/TaxiModels'
+import WhyChooseUs from '../Components/Home/WhyChooseUs'
+import Footer from '../Components/Footer/Footer'
 
 function Home() {
     return (
@@ -17,6 +19,9 @@ function Home() {
         <Content/>
         <NumbersSpeak/>
         <TaxiModels/>
+        <WhyChooseUs/>
+        <Footer/>
+    
         
         </>
     )

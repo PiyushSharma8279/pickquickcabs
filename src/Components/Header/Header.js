@@ -76,7 +76,7 @@ function Header() {
 
       
       {menuOpen && (
-        <div className="md:hidden bg-yellow-300 text-black font-semibold flex flex-col gap-4 px-6 py-6">
+        <div className="md:hidden bg-yellow-300 text-black font-semibold flex flex-col gap-4 px-6 py-6 relative top-40">
           <a href="#">HOME</a>
           <a href="#">ABOUT</a>
           <a href="#">PAGES</a>

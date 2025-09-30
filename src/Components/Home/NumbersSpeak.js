@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { FaTachometerAlt, FaUsers, FaTaxi, FaSmile } from "react-icons/fa";
 
 const stats = [
@@ -8,32 +8,54 @@ const stats = [
   { icon: <FaSmile className="text-yellow-500 text-4xl mb-4" />, value: 2480, label: "Happy People" },
 ];
 
-function Counter({ target }) {
+function Counter({ target, start }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    let start = 0;
-    const duration = 2000; // total animation time (2s)
-    const step = Math.ceil(target / (duration / 20)); // dynamic increment
+    if (!start) return; // run only when start is true
+
+    let startVal = 0;
+    const duration = 2000;
+    const step = Math.ceil(target / (duration / 20));
+
     const timer = setInterval(() => {
-      start += step;
-      if (start >= target) {
-        setCount(target); // stop exactly at target
+      startVal += step;
+      if (startVal >= target) {
+        setCount(target);
         clearInterval(timer);
       } else {
-        setCount(start);
+        setCount(startVal);
       }
-    }, 20); // update every 20ms
+    }, 20);
 
     return () => clearInterval(timer);
-  }, [target]);
+  }, [target, start]);
 
   return <span>{count}</span>;
 }
 
 function NumbersSpeak() {
+  const [startCount, setStartCount] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartCount(true);
+          observer.disconnect(); // run only once
+        }
+      },
+      { threshold: 0.3 } // trigger when 30% of section is visible
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="bg-gray-100 py-16 px-6">
+    <div ref={sectionRef} className="bg-gray-100 py-16 px-6">
       <div className="text-center mb-12">
         <p className="text-gray-600">Our fun facts</p>
         <h2 className="text-4xl sm:text-5xl font-bold">Numbers speak</h2>
@@ -47,7 +69,7 @@ function NumbersSpeak() {
           >
             {item.icon}
             <h3 className="text-4xl font-bold">
-              <Counter target={item.value} />
+              <Counter target={item.value} start={startCount} />
             </h3>
             <p className="text-gray-600 mt-2">{item.label}</p>
           </div>

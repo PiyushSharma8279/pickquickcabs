@@ -41,7 +41,7 @@ function TaxiModels() {
         {cars.map((car, index) => (
           <div
             key={index}
-            className="border border-yellow-400 rounded-xl shadow-md flex flex-col items-center p-6 transition hover:shadow-lg"
+            className="hover:border hover:border-yellow-500 rounded-xl shadow-md flex flex-col items-center p-6 transition hover:shadow-lg"
           >
             {/* Car Image */}
             <img src={car.img} alt={car.name} className="h-40 object-contain mb-4" />
@@ -52,17 +52,21 @@ function TaxiModels() {
             </div>
 
             {/* Car Info */}
-            <h3 className="text-lg font-bold mb-4">{car.name}</h3>
+            <h3 className="text-xl font-bold mb-4">{car.name}</h3>
             <div className="text-gray-700 text-sm space-y-1">
-              <p>
-                <span className="font-semibold">Base Rate:</span> {car.baseRate}
-              </p>
-              <p>
-                <span className="font-semibold">Per Mile/KM:</span> {car.perMile}
-              </p>
-              <p>
-                <span className="font-semibold">Passengers:</span> {car.passengers}
-              </p>
+              <div className=" flex justify-between text-lg gap-4">
+                <p className="font-semibold">Base Rate:</p>
+                <p> {car.baseRate}</p>
+              </div>
+              <div className=" flex justify-between text-lg gap-4">
+                <p className="font-semibold">Per Mile/KM:</p>
+                <p> {car.perMile}</p>
+              </div>
+              <div className=" flex justify-between text-lg gap-4">
+                <p className="font-semibold">Passengers:</p>
+                <p> {car.passengers}</p>
+              </div>
+              
             </div>
 
             {/* Button */}

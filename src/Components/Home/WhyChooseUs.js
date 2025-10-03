@@ -4,18 +4,18 @@ import { FaShieldAlt, FaUserCheck, FaClipboardList } from "react-icons/fa";
 const features = [
   {
     icon: <FaShieldAlt className="text-black text-5xl" />,
-    title: "Safety Guarantee",
-    desc: "Lorem ipsum dolor sit amet cons adipisci elit vehicula est non lac at quam.",
+    title: "Guaranteed Safety and Comfort ",
+    desc: "At Pick Quick Cabs we promise you a safe and comfortable ride every time. ",
   },
   {
     icon: <FaUserCheck className="text-black text-5xl" />,
-    title: "DBS Cleared Drivers",
-    desc: "Lorem ipsum dolor sit amet cons adipisci elit vehicula est non lac at quam.",
+    title: "Experienced and Skilled Drivers ",
+    desc: "We have employed skilled and professional drivers to make your ride safe and comfortable in every terrain. ",
   },
   {
     icon: <FaClipboardList className="text-black text-5xl" />,
-    title: "Free Quotation",
-    desc: "Lorem ipsum dolor sit amet cons adipisci elit vehicula est non lac at quam.",
+    title: "Luxury Models Available ",
+    desc: "Mercedes E class, BMW, Audi, and many other premium rides are available for booking. ",
   },
 ];
 
@@ -48,13 +48,7 @@ function WhyChooseUs() {
             {/* Description */}
             <p className="text-gray-400 mb-6">{item.desc}</p>
 
-            {/* Link */}
-            <a
-              href="#"
-              className="font-semibold uppercase text-sm tracking-wide hover:text-yellow-400 transition"
-            >
-              Read More
-            </a>
+            
           </div>
         ))}
       </div>

@@ -155,9 +155,9 @@ export default function BookingForm() {
       <div className="bg-yellow-400 py-6 px-6 flex items-center justify-center md:justify-between text-black">
         <div className="flex items-center gap-4 text-lg font-medium">
           <FontAwesomeIcon icon={faPhone} className="text-2xl" />
-          <span>Call and book emergency taxi</span>
+          <span className=" font-bold">Call and book emergency taxi</span>
         </div>
-        <h2 className="text-3xl font-bold mt-2 md:mt-0">888 888 0000</h2>
+        <h2 className="text-3xl font-bold mt-2 md:mt-0">84 47 43 38 52</h2>
       </div>
     </div>
   );

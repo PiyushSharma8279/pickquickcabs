@@ -5,10 +5,10 @@ import { SiKia, SiPerforce, SiSuzuki, SiToyota } from "react-icons/si";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 function OurTaxi() {
-     useEffect(() => {
-            window.scrollTo(0, 0);
-        }, []);
-    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const [openIndex, setOpenIndex] = useState(null);
 
     const slide = {
@@ -17,30 +17,30 @@ function OurTaxi() {
     };
 
     const cars = [
-       {
-           img: "https://www.varunmaruti.com/uploads/products/colors/wagonr-superior-white.png",
-           logo: <SiSuzuki className="text-4xl text-black" />,
-           name: "Wagonr",
-           baseRate: "1800*",
-           perMile: "9.5",
-           passengers: 4,
-         },
-         {
-           img: "https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/170299/dzire-2024-right-front-three-quarter.jpeg?isig=0&q=80",
-           logo: <SiSuzuki className="text-4xl text-black" />,
-           name: "Swift Dzire",
-           baseRate: "2000*",
-           perMile: "10",
-           passengers: 4,
-         },
-         {
-           img: "https://htcms-prod-images.s3.ap-south-1.amazonaws.com/htmobile1/marutisuzuki_ertiga/images/colour_marutisuzuki-ertiga_pearl-metallic-arctic-white_600x400.jpg",
-           logo: <SiSuzuki className="text-4xl text-black" />,
-           name: "Ertiga",
-           baseRate: "2900*",
-           perMile: "15",
-           passengers: 7,
-         },
+        {
+            img: "https://www.varunmaruti.com/uploads/products/colors/wagonr-superior-white.png",
+            logo: <SiSuzuki className="text-4xl text-black" />,
+            name: "Wagonr",
+            baseRate: "1800*",
+            perMile: "9.5",
+            passengers: 4,
+        },
+        {
+            img: "https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/170299/dzire-2024-right-front-three-quarter.jpeg?isig=0&q=80",
+            logo: <SiSuzuki className="text-4xl text-black" />,
+            name: "Swift Dzire",
+            baseRate: "2000*",
+            perMile: "10",
+            passengers: 4,
+        },
+        {
+            img: "https://htcms-prod-images.s3.ap-south-1.amazonaws.com/htmobile1/marutisuzuki_ertiga/images/colour_marutisuzuki-ertiga_pearl-metallic-arctic-white_600x400.jpg",
+            logo: <SiSuzuki className="text-4xl text-black" />,
+            name: "Ertiga",
+            baseRate: "2900*",
+            perMile: "15",
+            passengers: 7,
+        },
         {
             img: "https://www.kunkiamotors.com/wp-content/uploads/2023/07/y4576yg-1024x512.png",
             logo: <SiKia className="text-4xl text-black" />,
@@ -63,7 +63,7 @@ function OurTaxi() {
             name: "Force Traveller",
             baseRate: "6750*",
             perMile: "25",
-            passengers: 4,
+            passengers: 12,
         },
     ];
 
@@ -90,6 +90,8 @@ function OurTaxi() {
         <>
             <Header />
 
+
+
             {/* Hero */}
             <div
                 className="relative mt-32 h-[80vh] md:h-[90vh] flex items-center justify-center text-center text-white px-4"
@@ -104,6 +106,10 @@ function OurTaxi() {
                         {slide.title}
                     </h1>
                 </div>
+            </div>
+            <div className="text-center my-12 flex justify-center">
+                <p className="text-gray-600 text-xl font-medium w-[60%]">Pick Quick Cabs promise you a safe, reliable, and convenient journey across India, we ensure exceptional and hassle-free support with utmost satisfaction on every ride, irrespective of the terrain. </p>
+
             </div>
 
             {/* Cars Section */}

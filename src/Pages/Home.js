@@ -10,6 +10,7 @@ import WhyChooseUs from '../Components/Home/WhyChooseUs'
 import Footer from '../Components/Footer/Footer'
 
 import PricingTable from '../Components/Home/PricingTable'
+import Offering from '../Components/Home/Offerrings'
 
 function Home() {
      useEffect(() => {
@@ -23,6 +24,8 @@ function Home() {
         <CarSearchForm/>
         <BookingForm/>
         <Content/>
+        <Offering/>
+        
         <NumbersSpeak/>
         <TaxiModels/>
         <WhyChooseUs/>

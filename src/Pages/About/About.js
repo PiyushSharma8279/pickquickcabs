@@ -4,6 +4,7 @@ import Footer from "../../Components/Footer/Footer";
 import WhyChooseUs from "../../Components/Home/WhyChooseUs";
 import Content from "../../Components/Home/Content";
 import taxi2 from "../../Images/taxi-slider-2.jpg"
+import AboutContent from "./AboutContent";
 
 function About() {
     const slide = {
@@ -34,7 +35,7 @@ function About() {
                 </div>
             </div>
 
-            <Content />
+         <AboutContent/>
             <WhyChooseUs />
             <Footer />
         </>

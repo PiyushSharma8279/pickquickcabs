@@ -61,12 +61,15 @@ const Footer = () => {
         <div className="flex-1 min-w-[200px]">
           <h3 className="text-xl font-semibold mb-3">Contact</h3>
           <p className="text-gray-400 mb-2">
-            86 Road Brooklyn Street, 600<br />
-            New York, USA
+           Ghaziabad, India
           </p>
           <p className="flex items-center gap-2 text-white">
             <FontAwesomeIcon icon={faEnvelope} className="text-yellow-400" />
            help@pickquickcabs.com
+          </p>
+            <p className="flex items-center gap-2 text-white">
+            <FontAwesomeIcon icon={faEnvelope} className="text-yellow-400" />
+            book@pickquickcabs.com
           </p>
           <p className="flex items-center gap-2 mt-2 text-white">
             <FontAwesomeIcon icon={faPhoneAlt} className="text-yellow-400" />

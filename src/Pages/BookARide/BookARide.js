@@ -68,8 +68,9 @@ function BookARide() {
 
             {/* Booking Form */}
             <div className="max-w-4xl px-6 py-16">
-                <p className="text-yellow-500 text-sm mb-2">• Looking for taxi?</p>
-                <h2 className="text-4xl md:text-5xl font-bold mb-8">Make your booking</h2>
+                <p className="text-yellow-500 text-sm mb-2">• Rides – Always on Time </p>
+                <h2 className="text-4xl md:text-5xl font-bold mb-8">Explore Instant and Easy Bookings </h2>
+                <p className=" py-4">Pick Quick Cabs offer instant and easy bookings straight from your phone. Give us a call or you can make your booking from our official website. We are also working on our app to make ride bookings effortless. Enjoy the most affordable rides across India. </p>
 
                 <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Name */}
@@ -112,7 +113,7 @@ function BookARide() {
                         className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
                     />
 
-                    {/* Dropoff */}
+                 
                     <input
                         type="text"
                         name="dropoff"
@@ -122,7 +123,7 @@ function BookARide() {
                         className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
                     />
 
-                    {/* Date */}
+                 
                     <input
                         type="date"
                         name="date"
@@ -131,7 +132,7 @@ function BookARide() {
                         className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
                     />
 
-                    {/* Time */}
+                 
                     <select
                         name="time"
                         value={formData.time}
@@ -144,11 +145,11 @@ function BookARide() {
                         <option value="12PM–12.59PM">12PM–12.59PM</option>
                     </select>
 
-                    {/* --- New Section: Car Type --- */}
+                  
                     <div className="md:col-span-2 mt-6">
                         <h3 className="text-xl font-bold mb-2">Select Car Type</h3>
                         <div className="flex flex-wrap gap-4">
-                            {["Any type", "Hybrid", "SUV", "Luxury", "Vans"].map((type) => (
+                            {["Any type", "Hatchback", "SUV", "Sedan", "Vans"].map((type) => (
                                 <label key={type} className="flex items-center space-x-2">
                                     <input
                                         type="checkbox"
@@ -163,7 +164,7 @@ function BookARide() {
                         </div>
                     </div>
 
-                    {/* --- New Section: Other Information --- */}
+                 
                     <div className="md:col-span-2 mt-6">
                         <h3 className="text-xl font-bold mb-2">Other Information</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -174,24 +175,16 @@ function BookARide() {
                                 className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
                             >
                                 <option value="">Car model</option>
+                                <option value="Swift Dzire">Wagonr</option>
+                                <option value="Swift Dzire">Kia carens</option>
+                                <option value="Swift Dzire">Innova</option>
                                 <option value="Swift Dzire">Swift Dzire</option>
                                 <option value="Innova">Innova</option>
                                 <option value="Ertiga">Ertiga</option>
-                                <option value="Honda City">Honda City</option>
+                                <option value="Honda City">Force Traveller</option>
                             </select>
 
-                            <select
-                                name="driverAge"
-                                value={formData.driverAge}
-                                onChange={handleChange}
-                                className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
-                            >
-                                <option value="">Driver age</option>
-                                <option value="20-30">20–30</option>
-                                <option value="31-40">31–40</option>
-                                <option value="41-50">41–50</option>
-                                <option value="51+">51+</option>
-                            </select>
+                           
 
                             <select
                                 name="professionalDriver"
@@ -199,14 +192,14 @@ function BookARide() {
                                 onChange={handleChange}
                                 className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none md:col-span-2"
                             >
-                                <option value="">Professional driver</option>
+                                <option value="">Car Carrier</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
                             </select>
                         </div>
                     </div>
 
-                    {/* Submit Button */}
+                   
                     <div className="md:col-span-2">
                         <button
                             type="submit"

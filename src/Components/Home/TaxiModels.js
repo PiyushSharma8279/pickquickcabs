@@ -1,29 +1,29 @@
 import React from "react";
-import { SiMercedes, SiToyota, SiVolkswagen } from "react-icons/si";
+import {  SiSuzuki,} from "react-icons/si";
 
 const cars = [
   {
-    img: "https://old3.commonsupport.com/wp/conexi/wp-content/uploads/2020/04/pricing-1-3.png",
-    logo: <SiVolkswagen className="text-4xl text-black" />,
-    name: "M5 2008 Model",
-    baseRate: "$4.30",
-    perMile: "$2.00",
+    img: "https://www.varunmaruti.com/uploads/products/colors/wagonr-superior-white.png",
+    logo: <SiSuzuki className="text-4xl text-black" />,
+    name: "Wagonr",
+    baseRate: "1800*",
+    perMile: "9.5",
     passengers: 4,
   },
   {
-    img: "https://old3.commonsupport.com/wp/conexi/wp-content/uploads/2020/04/pricing-1-1.png",
-    logo: <SiMercedes className="text-4xl text-black" />,
-    name: "E Class 2010 Model",
-    baseRate: "$4.30",
-    perMile: "$2.00",
+    img: "https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/170299/dzire-2024-right-front-three-quarter.jpeg?isig=0&q=80",
+    logo: <SiSuzuki className="text-4xl text-black" />,
+    name: "Swift Dzire",
+    baseRate: "2000*",
+    perMile: "10",
     passengers: 4,
   },
   {
-    img: "https://old3.commonsupport.com/wp/conexi/wp-content/uploads/2020/04/pricing-1-2.png",
-    logo: <SiToyota className="text-4xl text-black" />,
-    name: "Yaris 2014 Model",
-    baseRate: "$4.30",
-    perMile: "$2.00",
+    img: "https://htcms-prod-images.s3.ap-south-1.amazonaws.com/htmobile1/marutisuzuki_ertiga/images/colour_marutisuzuki-ertiga_pearl-metallic-arctic-white_600x400.jpg",
+    logo: <SiSuzuki className="text-4xl text-black" />,
+    name: "Ertiga",
+    baseRate: "2900*",
+    perMile: "15",
     passengers: 4,
   },
 ];
@@ -55,7 +55,7 @@ function TaxiModels() {
             <h3 className="text-xl font-bold mb-4">{car.name}</h3>
             <div className="text-gray-700 text-sm space-y-1">
               <div className=" flex justify-between text-lg gap-4">
-                <p className="font-semibold">Base Rate:</p>
+                <p className="font-semibold">InterCity:</p>
                 <p> {car.baseRate}</p>
               </div>
               <div className=" flex justify-between text-lg gap-4">

@@ -1,5 +1,7 @@
 import React from "react";
-import { Play } from "lucide-react"; // play icon
+import { Play } from "lucide-react"; 
+import contentImage from "../../Images/contentImage.png"
+import videoImage from "../../Images/videoImage.jpg"
 
 function Content() {
   return (
@@ -8,10 +10,10 @@ function Content() {
       <div className="flex justify-center">
         <div className="w-[80%] p-10">
           <h3 className="text-center font-medium p-2 text-xl">
-            Welcome to Conexi Company
+           Make Your Ride Comfortable with Pick Quick Cabs 
           </h3>
           <h1 className="text-5xl md:text-7xl text-center font-bold leading-tight">
-            Your first choice for traveling anywhere
+            Reliable, Convenient, and Safe Journey Ahead 
           </h1>
         </div>
       </div>
@@ -22,7 +24,7 @@ function Content() {
           {/* Left: Passenger image */}
           <div className="flex-shrink-0 md:w-1/2">
             <img
-              src="https://old3.commonsupport.com/wp/conexi/wp-content/uploads/2020/04/choise-1-1.png"
+              src={contentImage}
               alt="Happy passenger"
               className="rounded-2xl shadow-lg object-cover w-full h-auto"
             />
@@ -32,22 +34,18 @@ function Content() {
           <div className="md:w-1/2 flex flex-col gap-6">
             {/* Title */}
             <h2 className="text-2xl sm:text-3xl font-bold">
-              We’re specialized in providing a high quality service
+              Witness the Most Affordable and Super Comfortable Taxi Rides All Over India 
             </h2>
 
             {/* Description */}
             <p className="text-gray-600 leading-relaxed">
-              There are many variations of passages of lorem ipsum available but
-              the majority have suffered alteration in some form by injected
-              humour or random words which don’t look even slightly believable.
-              If you are going to use a passage of lorem ipsum you need to be
-              sure there isn’t anything embarrassing.
+              Pick Quick Cabs offer instant and easy bookings straight from your phone. Give us a call or you can make your booking from our official website. We are also working on our app to make ride bookings effortless. Enjoy the most affordable rides across India. 
             </p>
 
             {/* Taxi image with play button */}
             <div className="relative w-full max-w-sm">
               <img
-                src="https://old3.commonsupport.com/wp/conexi/wp-content/uploads/2020/04/history-1-1.jpg"
+                src={videoImage}
                 alt="Taxi service"
                 className="rounded-2xl shadow-md w-full h-auto"
               />

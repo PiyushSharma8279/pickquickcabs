@@ -3,23 +3,33 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import taxi1 from "../../Images/taxi-slider-1.jpg"
+import taxi2 from "../../Images/taxi-slider-2.jpg"
+import taxi3 from "../../Images/taxi-slider-3.jpeg"
+import taxi4 from "../../Images/taxi4.jpg"
+
 
 function HomeSlider() {
   const slides = [
     {
-      img: "https://old3.commonsupport.com/wp/conexi/wp-content/uploads/2020/04/slider-1-2.jpg",
-      title: "Cheap & Trusted Taxi Company",
-      desc: "Enjoy your comfortable trip with Conexi Company Taxi",
+      img: taxi1,
+      title: "Affordable and Trusted Taxi Services 24/7 ",
+      desc: "Enjoy your ride with ultimate comfort and guaranteed confirmation. ",
     },
     {
-      img: "https://old3.commonsupport.com/wp/conexi/wp-content/uploads/2020/04/slider-1-1.jpg",
-      title: "Cheap & Trusted Taxi Company",
-       desc: "Enjoy your comfortable trip with Conexi Company Taxi",
+       img: taxi2,
+       title: "Affordable and Trusted Taxi Services 24/7 ",
+       desc: "Enjoy your ride with ultimate comfort and guaranteed confirmation. ",
     },
     {
-      img: "https://images.unsplash.com/photo-1490650404312-a2175773bbf5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGF4aXxlbnwwfHwwfHx8MA%3D%3D",
-     title: "Cheap & Trusted Taxi Company",
-       desc: "Enjoy your comfortable trip with Conexi Company Taxi",
+       img: taxi3,
+       title: "Affordable and Trusted Taxi Services 24/7 ",
+       desc: "Enjoy your ride with ultimate comfort and guaranteed confirmation. ",
+    },
+      {
+       img: taxi4,
+       title: "Affordable and Trusted Taxi Services 24/7 ",
+       desc: "Enjoy your ride with ultimate comfort and guaranteed confirmation. ",
     },
   ];
 

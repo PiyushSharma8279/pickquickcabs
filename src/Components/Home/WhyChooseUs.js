@@ -25,7 +25,7 @@ function WhyChooseUs() {
       {/* Heading */}
       <div className="text-center mb-12">
         <p className="uppercase tracking-wide text-sm text-gray-400">
-          Conexi benefit list
+         Pick Quick Cabs 
         </p>
         <h2 className="text-4xl sm:text-5xl font-bold">Why choose us</h2>
       </div>

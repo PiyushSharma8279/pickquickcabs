@@ -1,5 +1,5 @@
 // src/components/Footer.jsx
-
+import { useNavigate } from "react-router-dom";
 import {
   faFacebookF,
   faTwitter,
@@ -14,6 +14,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
+  const navigate = useNavigate()
   return (
     <footer className="bg-black text-white font-poppins">
       {/* Top Section */}
@@ -22,8 +23,7 @@ const Footer = () => {
         <div className="flex-1 min-w-[200px]">
           <h3 className="text-xl font-semibold mb-3">About Us</h3>
           <p className="text-gray-400">
-            There are many vari of pass of lorem ipsum availab but the majority
-            have suffered in some form by injected humour or words
+            Pick Quick Cabs offer instant and easy bookings straight from your phone. Give us a call or you can make your booking from our official website. 
           </p>
           <div className="flex gap-4 mt-4 text-white">
             <FontAwesomeIcon icon={faFacebookF} />
@@ -37,11 +37,11 @@ const Footer = () => {
         <div className="flex-1 min-w-[150px]">
           <h3 className="text-xl font-semibold mb-3">Links</h3>
           <ul className="text-gray-400 space-y-2">
-            <li>About</li>
-            <li>Get a Taxi</li>
+            <li onClick={()=> navigate('/')}>Home</li>
+            <li onClick={()=> navigate('/our-taxi')}>Our Taxi</li>
             <li>Our Reviews</li>
             <li>Latest News</li>
-            <li>Contact</li>
+            <li onClick={()=> navigate('/contact')}>Contact</li>
           </ul>
         </div>
 
@@ -49,8 +49,8 @@ const Footer = () => {
         <div className="flex-1 min-w-[150px]">
           <h3 className="text-xl font-semibold mb-3">Pages</h3>
           <ul className="text-gray-400 space-y-2">
-            <li>About</li>
-            <li>Get a Taxi</li>
+           <li onClick={()=> navigate('/about')}>About</li>
+            <li onClick={()=> navigate('/blog')}>Blog</li>
             <li>Our Reviews</li>
             <li>Latest News</li>
             <li>Contact</li>
@@ -66,11 +66,11 @@ const Footer = () => {
           </p>
           <p className="flex items-center gap-2 text-white">
             <FontAwesomeIcon icon={faEnvelope} className="text-yellow-400" />
-            needhelp@conexi.com
+           help@pickquickcabs.com
           </p>
           <p className="flex items-center gap-2 mt-2 text-white">
             <FontAwesomeIcon icon={faPhoneAlt} className="text-yellow-400" />
-            666 888 000
+            8447433852
           </p>
         </div>
 
@@ -78,48 +78,25 @@ const Footer = () => {
         <div className="flex-1 min-w-[250px]">
           <h3 className="text-xl font-semibold mb-3">Newsletter</h3>
           <p className="text-gray-400 mb-4">
-            Sign up now for our mailing list to get all latest news and updates
-            from conexi company.
+             For our mailing list to get all latest news and updates
+            from pickquickcabs company.
           </p>
-          <form className="flex">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="rounded-l-full px-4 py-2 outline-none text-black w-full"
-            />
-            <button
-              type="submit"
-              className="bg-yellow-400 text-black px-6 py-2 rounded-r-full font-semibold"
-            >
-              Go
-            </button>
-          </form>
+          
         </div>
       </div>
 
-      {/* Bottom Section */}
+      
       <div className="border-t border-gray-800 py-5 px-10 flex flex-wrap justify-between items-center text-gray-400 text-sm">
         <div className="flex items-center space-x-2">
-          <img
-            src="https://old3.commonsupport.com/wp/conexi/wp-content/themes/conexi/assets/images/footer-logo.png"
-            alt="conexi"
-            className="h-5"
-          />
-          <span>© 2025</span>
-          <a
-            href="https://tonatheme.com"
-            className="text-yellow-400 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tonatheme.com
-          </a>
+          
+          <span>CopyRight © 2025</span>
+        
         </div>
         <div className="flex space-x-4 mt-2 md:mt-0">
-          <a href="#" className="hover:underline">
+          <a href="" className="hover:underline">
             Terms of Use
           </a>
-          <a href="#" className="hover:underline">
+          <a href="" className="hover:underline">
             Privacy Policy
           </a>
         </div>

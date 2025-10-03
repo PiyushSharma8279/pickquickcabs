@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   FaPhoneAlt,
-  FaUser,
   FaEnvelope,
   FaTwitter,
   FaFacebookF,
@@ -12,20 +12,20 @@ import {
   
 } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
+import logo from "../../Images/logo.gif"
 
 function Header() {
+  const navigate = useNavigate()
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      {/* Top Bar */}
+     
       <div className="fixed top-0 left-0 w-full flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-6 px-4 sm:px-6 py-6 bg-black text-white text-xs sm:text-sm z-20">
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+          
           <span className="flex items-center gap-2">
-            <FaUser /> Customer Sign In
-          </span>
-          <span className="flex items-center gap-2">
-            <FaEnvelope /> needhelp@conexi.com
+            <FaEnvelope /> book@pickquickcabs.com
           </span>
         </div>
         <div className="flex  gap-4  md:justify-end">
@@ -37,54 +37,56 @@ function Header() {
       </div>
 
 
-      <div className="bg-yellow-400 fixed top-0 left-0 right-0 flex items-center gap-36 px-4 sm:px-8 py-4  z-30 md:mt-16 mt-24">
+     <div className="bg-yellow-400 fixed top-0 left-0 right-0 flex items-center gap-20 px-4 sm:px-8 py-4 z-30 md:mt-16 mt-24">
 
-        <div className="flex items-center gap-2 font-bold text-lg sm:text-xl">
-          <img
-            src="https://old3.commonsupport.com/wp/conexi/wp-content/themes/conexi/assets/images/logo.png"
-            alt="logo"
-            className="h-8 sm:h-10"
-          />
-        </div>
+  {/* Logo + Text Together */}
+  <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate("/")}>
+    <img
+      src={logo}
+      alt="logo"
+      className="h-10 sm:h-14 object-contain"
+    />
+    <span className="font-extrabold text-xl sm:text-2xl tracking-wide text-black">
+      PICK QUICK CABS
+    </span>
+  </div>
 
+  {/* Navigation Menu */}
+  <ul className="hidden md:flex gap-6 lg:gap-8 font-semibold">
+    <li className="text-gray-600 font-bold cursor-pointer hover:text-black" onClick={()=> navigate('/')}>HOME</li>
+    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/about')}>ABOUT</li>
+    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/our-taxi')}>OUR TAXI</li>
+    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/book-a-ride')}>BOOK A RIDE</li>
+    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/blog')}>BLOG</li>
+    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/contact')}>CONTACT</li>
+  </ul>
 
-        <ul className="hidden md:flex gap-6 lg:gap-8 font-semibold">
-          <li className="text-black cursor-pointer">HOME</li>
-          <li className="cursor-pointer">ABOUT</li>
-          <li className="cursor-pointer">PAGES</li>
-          <li className="cursor-pointer">BOOK A RIDE</li>
-          <li className="cursor-pointer">SHOP</li>
-          <li className="cursor-pointer">BLOG</li>
-          <li className="cursor-pointer">CONTACT</li>
-        </ul>
+  {/* Mobile Menu Button */}
+  <button
+    className="md:hidden text-black text-2xl"
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    {menuOpen ? <FaTimes /> : <FaBars />}
+  </button>
 
-
-        <button
-          className="md:hidden text-black text-2xl"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </button>
-
-
-        <div className="hidden md:flex items-center bg-black text-white px-6 py-2 rounded-l-full absolute right-0 top-0 bottom-0">
-          <FaPhoneVolume className="text-yellow-400 mr-4 size-10" />
-          <div>
-            <p className="font-medium text-lg  text-yellow-400">888 888 8888</p>
-            <p className="text-[10px] lg:text-xs">PHONE LINE</p>
-          </div>
-        </div>
-      </div>
+  {/* Phone Box (Desktop Only) */}
+  <div className="hidden md:flex items-center bg-black text-white px-6 py-2 rounded-l-full absolute right-0 top-0 bottom-0">
+    <FaPhoneVolume className="text-yellow-400 mr-4 size-10" />
+    <div>
+      <p className="font-medium text-lg text-yellow-400">8447433852</p>
+      <p className="text-[10px] lg:text-xs">PHONE LINE</p>
+    </div>
+  </div>
+</div>
 
 
       {menuOpen && (
         <div className="md:hidden bg-yellow-300 text-black font-semibold flex flex-col gap-4 px-6 py-6 relative top-40">
-          <a href="#">HOME</a>
-          <a href="#">ABOUT</a>
-          <a href="#">PAGES</a>
+          <p onClick={()=> navigate('/')}>HOME</p>
+          <p onClick={()=> navigate('/about')}>ABOUT</p>
+          <p onClick={()=> navigate('/our-taxi')}>OUR TAXI</p>
           <a href="#">BOOK A RIDE</a>
-          <a href="#">SHOP</a>
-          <a href="#">BLOG</a>
+          <p onClick={()=> navigate('/blog')}>BLOG</p>
           <a href="#">CONTACT</a>
 
 

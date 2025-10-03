@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from '../Components/Header/Header'
 import HomeSlider from '../Components/Home/HomeSlider'
 import CarSearchForm from '../Components/Home/Form'
@@ -8,9 +8,14 @@ import NumbersSpeak from '../Components/Home/NumbersSpeak'
 import TaxiModels from '../Components/Home/TaxiModels'
 import WhyChooseUs from '../Components/Home/WhyChooseUs'
 import Footer from '../Components/Footer/Footer'
-import TaxiFares from '../Components/Home/TaxiFares'
+
+import PricingTable from '../Components/Home/PricingTable'
 
 function Home() {
+     useEffect(() => {
+            window.scrollTo(0, 0);
+        }, []);
+    
     return (
         <>
         <Header/>
@@ -21,7 +26,7 @@ function Home() {
         <NumbersSpeak/>
         <TaxiModels/>
         <WhyChooseUs/>
-        <TaxiFares/>
+        <PricingTable/>
         <Footer/>
     
         

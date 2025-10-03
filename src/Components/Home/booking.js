@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faClock, faPhone } from "@fortawesome/free-solid-svg-icons";
+import taxiBooking from "../../Images/taxi-booking.jpg"
 
 export default function BookingForm() {
   const [formData, setFormData] = useState({
@@ -24,13 +25,13 @@ export default function BookingForm() {
   };
 
   return (
-    <div className="bg-white">
-      {/* Main container */}
+    <div className="bg-gray-200">
+      
       <div className="md:flex max-w-7xl mx-auto">
-        {/* Left Section */}
-        <div className="md:w-1/2 bg-white px-6 py-16">
+       
+        <div className="md:w-1/2 bg-gray-100 px-6 py-16">
           <img
-            src="https://old3.commonsupport.com/wp/conexi/wp-content/uploads/2020/04/book-1-1.jpg"
+            src={taxiBooking}
             alt="Taxi Service"
             className="rounded-lg mb-8"
           />
@@ -41,30 +42,27 @@ export default function BookingForm() {
             Welcome to the most trusted company
           </h1>
           <p className="text-gray-600 mb-6">
-            There are many variations of passages of lorem ipsum available but
-            the majority have suffered alteration in some form by injected humor
-            or random word which don’t look even slightly believable you are
-            going to use a passage.
+           Pick Quick Cabs offer instant and easy bookings straight from your phone. Give us a call or you can make your booking from our official website. We are also working on our app to make ride bookings effortless. Enjoy the most affordable rides across India. 
           </p>
-          <div className="flex gap-6 font-bold text-2xl text-yellow-500">
+          <div className="flex gap-6 font-bold text-5xl text-yellow-500">
             <span>Safe.</span>
             <span>Fast.</span>
             <span>Quick.</span>
           </div>
         </div>
 
-        {/* Right Section - Booking Form */}
+        
         <div className="md:w-1/2 bg-black text-white px-6 py-16">
-          <p className="text-yellow-500 text-sm mb-2">• Looking for taxi?</p>
+          <p className="text-yellow-500 text-sm mb-2">• Wanna Book Your Ride? </p>
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Make your booking
+            Enjoy Seamless Booking 
           </h2>
 
           <form
             onSubmit={handleSubmit}
             className="flex flex-col gap-4 max-w-lg"
           >
-            {/* Name & Email */}
+            
             <div className="flex gap-4">
               <input
                 type="text"
@@ -153,7 +151,7 @@ export default function BookingForm() {
         </div>
       </div>
 
-      {/* Bottom Yellow Bar */}
+     
       <div className="bg-yellow-400 py-6 px-6 flex items-center justify-center md:justify-between text-black">
         <div className="flex items-center gap-4 text-lg font-medium">
           <FontAwesomeIcon icon={faPhone} className="text-2xl" />

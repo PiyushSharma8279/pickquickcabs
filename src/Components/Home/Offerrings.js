@@ -1,6 +1,6 @@
 import blog1 from "../../Images/taxi-slider-2.jpg";
 import blog2 from "../../Images/videoImage.jpg";
-import blog3 from "../../Images/taxi-booking.jpg";
+import blog3 from "../../Images/cab-service-1.jpg";
 
 const blogs = [
   {

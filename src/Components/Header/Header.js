@@ -57,7 +57,7 @@ function Header() {
     <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/about')}>ABOUT</li>
     <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/our-taxi')}>OUR TAXI</li>
     <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/book-a-ride')}>BOOK A RIDE</li>
-    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/blog')}>BLOG</li>
+    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/out-station')}>Out Station</li>
     <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/contact')}>CONTACT</li>
   </ul>
 

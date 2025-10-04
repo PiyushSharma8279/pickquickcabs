@@ -14,15 +14,15 @@ function BookARide() {
         time: "",
         carTypes: [],
         carModel: "",
-        driverAge: "",
         professionalDriver: "",
     });
+
+    const [agreed, setAgreed] = useState(false); // New state for checkbox
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
 
-        if (type === "checkbox") {
-            // Handle Car Type checkboxes
+        if (type === "checkbox" && name === "carTypes") {
             setFormData((prev) => {
                 if (checked) {
                     return { ...prev, carTypes: [...prev.carTypes, value] };
@@ -37,6 +37,10 @@ function BookARide() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!agreed) {
+            alert("You must agree to the terms before booking!");
+            return;
+        }
         console.log("Booking Data:", formData);
         alert("Booking submitted!");
     };
@@ -50,7 +54,6 @@ function BookARide() {
         <>
             <Header />
 
-            {/* Hero Section */}
             <div
                 className="relative mt-32 h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white px-4"
                 style={{
@@ -66,11 +69,12 @@ function BookARide() {
                 </div>
             </div>
 
-            {/* Booking Form */}
             <div className="max-w-4xl px-6 py-16">
                 <p className="text-yellow-500 text-sm mb-2">• Rides – Always on Time </p>
                 <h2 className="text-4xl md:text-5xl font-bold mb-8">Explore Instant and Easy Bookings </h2>
-                <p className=" py-4">Pick Quick Cabs offer instant and easy bookings straight from your phone. Give us a call or you can make your booking from our official website. We are also working on our app to make ride bookings effortless. Enjoy the most affordable rides across India. </p>
+                <p className="py-4">
+                    Pick Quick Cabs offer instant and easy bookings straight from your phone. Give us a call or you can make your booking from our official website. We are also working on our app to make ride bookings effortless. Enjoy the most affordable rides across India.
+                </p>
 
                 <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Name */}
@@ -82,7 +86,6 @@ function BookARide() {
                         onChange={handleChange}
                         className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
                     />
-
                     {/* Email */}
                     <input
                         type="email"
@@ -92,7 +95,6 @@ function BookARide() {
                         onChange={handleChange}
                         className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
                     />
-
                     {/* Passengers */}
                     <input
                         type="number"
@@ -102,7 +104,6 @@ function BookARide() {
                         onChange={handleChange}
                         className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
                     />
-
                     {/* Pickup */}
                     <input
                         type="text"
@@ -112,8 +113,7 @@ function BookARide() {
                         onChange={handleChange}
                         className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
                     />
-
-                 
+                    {/* Dropoff */}
                     <input
                         type="text"
                         name="dropoff"
@@ -122,8 +122,7 @@ function BookARide() {
                         onChange={handleChange}
                         className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
                     />
-
-                 
+                    {/* Date */}
                     <input
                         type="date"
                         name="date"
@@ -131,8 +130,7 @@ function BookARide() {
                         onChange={handleChange}
                         className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
                     />
-
-                 
+                    {/* Time */}
                     <select
                         name="time"
                         value={formData.time}
@@ -145,7 +143,7 @@ function BookARide() {
                         <option value="12PM–12.59PM">12PM–12.59PM</option>
                     </select>
 
-                  
+                    {/* Car Types */}
                     <div className="md:col-span-2 mt-6">
                         <h3 className="text-xl font-bold mb-2">Select Car Type</h3>
                         <div className="flex flex-wrap gap-4">
@@ -164,7 +162,7 @@ function BookARide() {
                         </div>
                     </div>
 
-                 
+                    {/* Other Information */}
                     <div className="md:col-span-2 mt-6">
                         <h3 className="text-xl font-bold mb-2">Other Information</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -175,16 +173,13 @@ function BookARide() {
                                 className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
                             >
                                 <option value="">Car model</option>
-                                <option value="Swift Dzire">Wagonr</option>
-                                <option value="Swift Dzire">Kia carens</option>
-                                <option value="Swift Dzire">Innova</option>
-                                <option value="Swift Dzire">Swift Dzire</option>
+                                <option value="Wagonr">Wagonr</option>
+                                <option value="Kia carens">Kia carens</option>
                                 <option value="Innova">Innova</option>
+                                <option value="Swift Dzire">Swift Dzire</option>
                                 <option value="Ertiga">Ertiga</option>
-                                <option value="Honda City">Force Traveller</option>
+                                <option value="Force Traveller">Force Traveller</option>
                             </select>
-
-                           
 
                             <select
                                 name="professionalDriver"
@@ -199,11 +194,27 @@ function BookARide() {
                         </div>
                     </div>
 
-                   
+                    {/* Agreement Checkbox */}
+                    <div className="md:col-span-2 flex items-center space-x-2">
+                        <input
+                            type="checkbox"
+                            checked={agreed}
+                            onChange={(e) => setAgreed(e.target.checked)}
+                            id="agree"
+                        />
+                        <label htmlFor="agree" className="text-sm">
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+
+                    {/* Submit Button */}
                     <div className="md:col-span-2">
                         <button
                             type="submit"
-                            className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-4 rounded-full"
+                            disabled={!agreed} // Disable until checked
+                            className={`w-full font-bold py-4 rounded-full text-black ${
+                                agreed ? "bg-yellow-400 hover:bg-yellow-500" : "bg-gray-400 cursor-not-allowed"
+                            }`}
                         >
                             Book Now
                         </button>

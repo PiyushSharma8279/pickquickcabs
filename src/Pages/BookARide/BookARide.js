@@ -194,7 +194,7 @@ function BookARide() {
                         </div>
                     </div>
 
-                    {/* Agreement Checkbox */}
+                    
                     <div className="md:col-span-2 flex items-center space-x-2">
                         <input
                             type="checkbox"

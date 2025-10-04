@@ -35,7 +35,47 @@ function About() {
                 </div>
             </div>
 
-         <AboutContent/>
+            <AboutContent />
+            <div className=" p-10">
+                <h2 className=" text-xl py-2 font-bold">Our Mission</h2>
+                <p>
+                    Most passengers end up straining themselves at the end moment while booking their cab. Our mission is to help passengers with guaranteed confirmation of booking. We are set to create a benchmark in the transportation industry by making rides highly affordable while providing top-notch services at the same prices.
+                    We ensure every ride with us feels more than just a ride. We are working to improve our customer’s experience and setting the benchmark high.
+
+                </p>
+                <h2 className=" text-xl py-2 font-bold">Why Choose Us?</h2>
+                <p>
+                   We are on a mission to navigate the challenges seamlessly making rides possible with trained and professional drivers in almost all the conditions possible. 
+                </p>
+                <h2 className=" text-xl py-2 font-bold">Nationwide Availability</h2>
+                <p>
+                    Travelling across India is quick and safe with Pick Quick Cabs that is founded in 2010, but launched their online services in 2017. We are there to serve you wherever the road takes you. 
+                </p>
+                <h2 className=" text-xl py-2 font-bold">Comfort and Safety Guaranteed</h2>
+                <p>
+                   Our cars are well-maintained, serviced on time, and documented properly with trained and professional drivers to make your journey safer and more comfortable. 
+                </p>
+                 <h2 className=" text-xl py-2 font-bold">Luxury Models Available</h2>
+                <p>
+                  Experience unparalleled comfort and style with our luxury models. We help redefine premium travel across India at Pick Quick Cabs. 
+                </p>
+                 <h2 className=" text-xl py-2 font-bold">Our Values</h2>
+                <p>
+                  Our top priority is customer satisfaction and an unparalleled approach to make your journey convenient and unique. 
+                </p>
+                 <h2 className=" text-xl py-2 font-bold">Trust</h2>
+                <p>
+                   We believe in bonding with customers with our exceptional taxi services and an unparalleled approach to driving across the terrain.
+                </p>
+                 <h2 className=" text-xl py-2 font-bold">Excellence</h2>
+                <p>
+                  We are developing our website and app in a way to makes the experience seamless and convenient, striving for perfection in every ride. 
+                </p>
+                 <h2 className=" text-xl py-2 font-bold">Innovation</h2>
+                <p>
+                  GPS, an on-time tracking system, and modern technologies enhance your riding experience with Pick Quick Cabs.
+                </p>
+            </div>
             <WhyChooseUs />
             <Footer />
         </>

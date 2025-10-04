@@ -37,7 +37,7 @@ function Header() {
       </div>
 
 
-     <div className="bg-yellow-400 fixed top-0 left-0 right-0 flex items-center gap-20 px-4 sm:px-8 py-4 z-30 md:mt-16 mt-24">
+     <div className="bg-yellow-400 fixed top-0 left-0 right-0 flex items-center gap-20 px-4 sm:px-8 py-4 z-30 mt-16">
 
   {/* Logo + Text Together */}
   <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate("/")}>
@@ -81,13 +81,13 @@ function Header() {
 
 
       {menuOpen && (
-        <div className="md:hidden bg-yellow-300 text-black font-semibold flex flex-col gap-4 px-6 py-6 relative top-40">
+        <div className="md:hidden bg-yellow-300 text-black font-semibold flex flex-col gap-4 px-6 py-6 fixed top-32 z-50 left-0 right-0">
           <p onClick={()=> navigate('/')}>HOME</p>
           <p onClick={()=> navigate('/about')}>ABOUT</p>
           <p onClick={()=> navigate('/our-taxi')}>OUR TAXI</p>
-          <a href="#">BOOK A RIDE</a>
+          <p onClick={()=> navigate('/book-a-ride')}>BOOK A RIDE</p>
           <p onClick={()=> navigate('/blog')}>BLOG</p>
-          <a href="#">CONTACT</a>
+          <p onClick={()=> navigate('/contact')}>CONTACT</p>
 
 
           <div className="flex items-center gap-2 bg-black text-yellow-400 px-4 py-2 rounded-lg mb-4">

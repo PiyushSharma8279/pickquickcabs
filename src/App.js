@@ -7,6 +7,7 @@ import BlogGrid from './Pages/Blog/Blog'
 import BookARide from './Pages/BookARide/BookARide'
 import MyMap from './Pages/Contact/Contact'
 import OutStation from "./Pages/OutStation/OutStation"
+import NoidaToChardham from './Pages/ChardhamYatra/Chardham'
 function App() {
   return (
     <>
@@ -19,6 +20,8 @@ function App() {
       <Route path='/book-a-ride' element={<BookARide/>}/>
       <Route path='/contact' element={<MyMap/>}/>
       <Route path='/out-station' element={<OutStation/>}/>
+      <Route path='/char-dham' element={<NoidaToChardham/>}/>
+
 
 
 

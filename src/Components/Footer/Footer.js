@@ -51,7 +51,7 @@ const Footer = () => {
           <ul className="text-gray-400 space-y-2">
            <li onClick={()=> navigate('/about')}  className=" cursor-pointer">About</li>
             <li onClick={()=> navigate('/blog')}  className=" cursor-pointer">Blog</li>
-            <li>Our Reviews</li>
+            <li onClick={()=> navigate('/char-dham')}  className=" cursor-pointer">Char Dham</li>
             <li>Latest News</li>
             <li>Contact</li>
           </ul>

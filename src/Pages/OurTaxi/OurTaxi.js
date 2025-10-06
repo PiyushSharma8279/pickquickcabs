@@ -3,8 +3,11 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import { SiKia, SiPerforce, SiSuzuki, SiToyota } from "react-icons/si";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function OurTaxi() {
+    const navigate = useNavigate()
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -148,8 +151,10 @@ function OurTaxi() {
                             </div>
                         </div>
 
-                        <button className="mt-6 px-6 py-2 rounded-full bg-yellow-400 text-black font-semibold hover:bg-yellow-500 transition">
-                            Book Taxi
+                        <button className="mt-6 px-6 py-2 rounded-full bg-yellow-400 text-black font-semibold hover:bg-yellow-500 transition"
+                        onClick={()=> navigate('/book-a-ride')}
+                        >
+                            Book Cab
                         </button>
                     </div>
                 ))}

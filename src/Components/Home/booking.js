@@ -8,11 +8,13 @@ export default function BookingForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "", // ✅ new field
     passengers: "",
     pickup: "",
     dropoff: "",
     date: "",
     time: "",
+    tripType: "",
   });
 
   const [status, setStatus] = useState("");
@@ -25,7 +27,7 @@ export default function BookingForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Replace these with your own EmailJS IDs
+    // Replace with your actual EmailJS IDs
     const serviceId = "service_q4c7kio";
     const templateId = "template_zzidn0p";
     const publicKey = "UN1tRImChgV6wg9Qc";
@@ -33,6 +35,7 @@ export default function BookingForm() {
     const templateParams = {
       name: formData.name,
       email: formData.email,
+      phone: formData.phone, // ✅ added phone
       passengers: formData.passengers,
       pickup: formData.pickup,
       dropoff: formData.dropoff,
@@ -50,6 +53,7 @@ export default function BookingForm() {
           setFormData({
             name: "",
             email: "",
+            phone: "",
             passengers: "",
             pickup: "",
             dropoff: "",
@@ -68,7 +72,7 @@ export default function BookingForm() {
   return (
     <div className="bg-gray-200">
       <div className="md:flex max-w-7xl mx-auto flex-col md:flex-row">
-        {/* Left */}
+        {/* Left Section */}
         <div className="md:w-1/2 bg-gray-100 px-6 py-12 md:py-16 flex flex-col items-center">
           <img
             src={taxiBooking}
@@ -90,7 +94,7 @@ export default function BookingForm() {
           </div>
         </div>
 
-        {/* Right */}
+        {/* Right Section */}
         <div className="md:w-1/2 bg-black text-white px-6 py-12 md:py-16">
           <p className="text-yellow-500 text-sm mb-2">• Wanna Book Your Ride?</p>
           <h2 className="text-3xl md:text-5xl font-bold mb-8">
@@ -119,6 +123,25 @@ export default function BookingForm() {
                 onChange={handleChange}
                 required
                 className="w-full sm:w-1/2 bg-[#1c1c1c] text-white px-5 py-4 rounded-full outline-none"
+              />
+            </div>
+
+            {/* ✅ Phone Field */}
+            <div className="relative">
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone number"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                pattern="[0-9]{10}"
+                maxLength="10"
+                className="w-full bg-[#1c1c1c] text-white px-5 py-4 pr-10 rounded-full outline-none"
+              />
+              <FontAwesomeIcon
+                icon={faPhone}
+                className="absolute right-5 top-1/2 transform -translate-y-1/2 text-yellow-400"
               />
             </div>
 
@@ -182,17 +205,18 @@ export default function BookingForm() {
                 className="absolute right-5 top-1/2 transform -translate-y-1/2 text-yellow-400"
               />
             </div>
-             <select
-                name="tripType"
-                value={formData.tripType}
-                onChange={handleChange}
-                required
-                className="w-full  bg-[#1c1c1c] text-white px-5 py-4 rounded-full outline-none"
-              >
-                <option value="">Trip type</option>
-                <option value="Round Trip">Round Trip</option>
-                <option value="One Way">One Way</option>
-              </select>
+
+            <select
+              name="tripType"
+              value={formData.tripType}
+              onChange={handleChange}
+              required
+              className="w-full bg-[#1c1c1c] text-white px-5 py-4 rounded-full outline-none"
+            >
+              <option value="">Trip type</option>
+              <option value="Round Trip">Round Trip</option>
+              <option value="One Way">One Way</option>
+            </select>
 
             <button
               type="submit"

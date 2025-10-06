@@ -1,5 +1,6 @@
 import React from "react";
 import {  SiSuzuki,} from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 
 const cars = [
   {
@@ -29,6 +30,7 @@ const cars = [
 ];
 
 function TaxiModels() {
+  const navigate = useNavigate()
   return (
     <div className="bg-white py-16 px-6">
       <div className="text-center mb-12">
@@ -70,8 +72,10 @@ function TaxiModels() {
             </div>
 
             {/* Button */}
-            <button className="mt-6 px-6 py-2 rounded-full bg-yellow-400 text-black font-semibold hover:bg-yellow-500 transition">
-              Book Taxi
+            <button className="mt-6 px-6 py-2 rounded-full bg-yellow-400 text-black font-semibold hover:bg-yellow-500 transition"
+            onClick={()=> navigate('/book-a-ride')}
+            >
+              Book Cab
             </button>
           </div>
         ))}

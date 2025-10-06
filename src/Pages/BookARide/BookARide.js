@@ -12,6 +12,7 @@ function BookARide() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     passengers: "",
     pickup: "",
     dropoff: "",
@@ -50,7 +51,6 @@ function BookARide() {
       return;
     }
 
-    // Replace these IDs with your own EmailJS values
     const serviceId = "service_q4c7kio";
     const templateId = "template_afskxin";
     const publicKey = "UN1tRImChgV6wg9Qc";
@@ -58,6 +58,7 @@ function BookARide() {
     const templateParams = {
       name: formData.name,
       email: formData.email,
+      phone: formData.phone,
       passengers: formData.passengers,
       pickup: formData.pickup,
       dropoff: formData.dropoff,
@@ -78,6 +79,7 @@ function BookARide() {
           setFormData({
             name: "",
             email: "",
+            phone: "",
             passengers: "",
             pickup: "",
             dropoff: "",
@@ -123,13 +125,16 @@ function BookARide() {
       </div>
 
       {/* Booking Form */}
-      <div className="max-w-4xl px-6 py-16 ">
+      <div className="max-w-4xl px-6 py-16">
         <p className="text-yellow-500 text-sm mb-2">• Rides – Always on Time</p>
         <h2 className="text-4xl md:text-5xl font-bold mb-8">
           Explore Instant and Easy Bookings
         </h2>
         <p className="py-4">
-          Pick Quick Cabs offer instant and easy bookings straight from your phone. Give us a call or you can make your booking from our official website. We are also working on our app to make ride bookings effortless. Enjoy the most affordable rides across India.
+          Pick Quick Cabs offer instant and easy bookings straight from your phone.
+          Give us a call or make your booking from our official website. We’re also
+          working on our app to make ride bookings effortless. Enjoy the most affordable
+          rides across India.
         </p>
 
         <form
@@ -146,6 +151,7 @@ function BookARide() {
             required
             className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
           />
+
           <input
             type="email"
             name="email"
@@ -155,6 +161,19 @@ function BookARide() {
             required
             className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
           />
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone number"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+            pattern="[0-9]{10}"
+            maxLength={10}
+            className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
+          />
+
           <input
             type="number"
             name="passengers"
@@ -164,6 +183,7 @@ function BookARide() {
             required
             className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
           />
+
           <input
             type="text"
             name="pickup"
@@ -173,6 +193,7 @@ function BookARide() {
             required
             className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
           />
+
           <input
             type="text"
             name="dropoff"
@@ -182,6 +203,7 @@ function BookARide() {
             required
             className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
           />
+
           <input
             type="date"
             name="date"
@@ -190,6 +212,7 @@ function BookARide() {
             required
             className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
           />
+
           <input
             name="time"
             value={formData.time}
@@ -199,7 +222,8 @@ function BookARide() {
             placeholder="Type Time"
             className="w-full bg-gray-200 text-black px-5 py-4 rounded-full outline-none"
           />
-                      {/* Car Types */}
+
+          {/* Car Types */}
           <div className="md:col-span-2 mt-6">
             <h3 className="text-xl font-bold mb-2">Select Car Type</h3>
             <div className="flex flex-wrap gap-4">

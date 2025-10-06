@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 const NoidaToChardham = () => {
+  const navigate = useNavigate()
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -20,16 +22,16 @@ const NoidaToChardham = () => {
           />
           <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center">
-              Noida to Char Dham Yatra Taxi Service
+              Delhi to Char Dham Yatra Taxi Service
             </h1>
           </div>
         </section>
 
         {/* Intro Section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">Noida to Char Dham Taxi Service</h2>
+          <h2 className="text-2xl font-semibold">Delhi to Char Dham Taxi Service</h2>
           <p>
-            Embark on a spiritual journey with <b>KTS Cabs</b> from Noida to the holy Char Dham —
+            Embark on a spiritual journey with <b>Pick Quick Cabs</b> from Delhi to the holy Char Dham —
             <b> Yamunotri, Gangotri, Kedarnath,</b> and <b>Badrinath</b>. Our reliable and comfortable
             taxi services ensure a safe and serene pilgrimage experience through the divine Himalayas.
           </p>
@@ -133,7 +135,7 @@ const NoidaToChardham = () => {
           <div>
             <h3 className="text-xl font-semibold">Distance & Travel Time</h3>
             <ul className="list-disc pl-5 space-y-2">
-              <li>Noida → Yamunotri: ~410 km / ~11-12 hrs</li>
+              <li>Delhi → Yamunotri: ~400 km / ~11-12 hrs</li>
               <li>Yamunotri → Gangotri: ~230 km / ~7-8 hrs</li>
               <li>Gangotri → Kedarnath: ~270 km + 18 km trek</li>
               <li>Kedarnath → Badrinath: ~220 km / ~8 hrs</li>
@@ -164,7 +166,9 @@ const NoidaToChardham = () => {
               <h4 className="text-lg font-medium">Sedan (Dzire / Similar)</h4>
               <p>Seats: 4+1</p>
               <p>Starting Fare: ₹12/km</p>
-              <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">
+              <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
+              onClick={()=> navigate('/book-a-ride')}
+              >
                 Book Now
               </button>
             </div>
@@ -179,7 +183,9 @@ const NoidaToChardham = () => {
               <h4 className="text-lg font-medium">SUV / Innova</h4>
               <p>Seats: 6+1</p>
               <p>Starting Fare: ₹16/km</p>
-              <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">
+              <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
+              onClick={()=> navigate('/book-a-ride')}
+              >
                 Book Now
               </button>
             </div>
@@ -194,7 +200,9 @@ const NoidaToChardham = () => {
               <h4 className="text-lg font-medium">WagonR</h4>
               <p>Seats: 4+1</p>
               <p>Starting Fare: ₹10/km</p>
-              <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">
+              <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
+              onClick={()=> navigate('/book-a-ride')}
+              >
                 Book Now
               </button>
             </div>

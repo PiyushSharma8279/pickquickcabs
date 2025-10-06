@@ -1,23 +1,23 @@
-import blog1 from "../../Images/taxi-slider-2.jpg";
-import blog2 from "../../Images/videoImage.jpg";
+import blog1 from "../../Images/airport.jpg";
+import blog2 from "../../Images/taxiSlider3.jpg";
 import blog3 from "../../Images/cab-service-1.jpg";
 
 const blogs = [
   {
     id: 1,
-    title: "Credit booking",
+    title: "Airport Pick-up and Drop",
     desc: "There are many van of pasage of suffer alteration lipsum is simply free text.",
     img: blog1,
   },
   {
     id: 2,
-    title: "Home pickups",
+    title: "Inter City Service",
     desc: "There are many van of pasage of suffer alteration lipsum is simply free text.",
     img: blog2,
   },
   {
     id: 3,
-    title: "Long travels",
+    title: "Out Station Service",
     desc: "There are many van of pasage of suffer alteration lipsum is simply free text.",
     img: blog3,
   },

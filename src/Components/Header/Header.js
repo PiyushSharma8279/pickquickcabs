@@ -54,11 +54,11 @@ function Header() {
   {/* Navigation Menu */}
   <ul className="hidden md:flex gap-6 lg:gap-8 font-semibold">
     <li className="text-gray-600 font-bold cursor-pointer hover:text-black" onClick={()=> navigate('/')}>HOME</li>
-    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/about')}>ABOUT</li>
-    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/our-taxi')}>OUR TAXI</li>
+    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/about-us')}>ABOUT</li>
+    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/our-taxi-service')}>OUR TAXI</li>
     <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/book-a-ride')}>BOOK A RIDE</li>
-    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/out-station')}>OUT STATION</li>
-    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/contact')}>CONTACT</li>
+    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/outstation-cab-service-near-me')}>OUT STATION</li>
+    <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/contact-us')}>CONTACT</li>
   </ul>
 
   {/* Mobile Menu Button */}
@@ -83,11 +83,11 @@ function Header() {
       {menuOpen && (
         <div className="md:hidden bg-yellow-300 text-black font-semibold flex flex-col gap-4 px-6 py-6 fixed top-32 z-50 left-0 right-0">
           <p onClick={()=> navigate('/')}>HOME</p>
-          <p onClick={()=> navigate('/about')}>ABOUT</p>
-          <p onClick={()=> navigate('/our-taxi')}>OUR TAXI</p>
+          <p onClick={()=> navigate('/about-us')}>ABOUT</p>
+          <p onClick={()=> navigate('/our-taxi-service')}>OUR TAXI</p>
           <p onClick={()=> navigate('/book-a-ride')}>BOOK A RIDE</p>
           <p onClick={()=> navigate('/blog')}>BLOG</p>
-          <p onClick={()=> navigate('/contact')}>CONTACT</p>
+          <p onClick={()=> navigate('/contact-us')}>CONTACT</p>
 
 
           <div className="flex items-center gap-2 bg-black text-yellow-400 px-4 py-2 rounded-lg mb-4">

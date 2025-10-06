@@ -14,13 +14,13 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/our-taxi' element={<OurTaxi/>}/>
+      <Route path='/about-us' element={<About/>}/>
+      <Route path='/our-taxi-service' element={<OurTaxi/>}/>
       <Route path='/blog' element={<BlogGrid/>}/>
       <Route path='/book-a-ride' element={<BookARide/>}/>
-      <Route path='/contact' element={<MyMap/>}/>
-      <Route path='/out-station' element={<OutStation/>}/>
-      <Route path='/char-dham' element={<NoidaToChardham/>}/>
+      <Route path='/contact-us' element={<MyMap/>}/>
+      <Route path='/outstation-cab-service-near-me' element={<OutStation/>}/>
+      <Route path='/char-dham-yatra-cab-service' element={<NoidaToChardham/>}/>
 
 
 

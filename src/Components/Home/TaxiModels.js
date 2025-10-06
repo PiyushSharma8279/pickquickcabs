@@ -24,7 +24,7 @@ const cars = [
     name: "Ertiga",
     baseRate: "2900*",
     perMile: "15",
-    passengers: 4,
+    passengers: 7,
   },
 ];
 

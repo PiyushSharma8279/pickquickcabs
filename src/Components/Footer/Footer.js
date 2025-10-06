@@ -38,10 +38,10 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-3">Links</h3>
           <ul className="text-gray-400 space-y-2">
             <li onClick={()=> navigate('/')} className=" cursor-pointer">Home</li>
-            <li onClick={()=> navigate('/our-taxi')}  className=" cursor-pointer">Our Taxi</li>
+            <li onClick={()=> navigate('/our-taxi-service')}  className=" cursor-pointer">Our Taxi</li>
             <li>Our Reviews</li>
             <li>Latest News</li>
-            <li onClick={()=> navigate('/contact')}  className=" cursor-pointer">Contact</li>
+            <li onClick={()=> navigate('/contact-us')}  className=" cursor-pointer">Contact</li>
           </ul>
         </div>
 
@@ -49,9 +49,9 @@ const Footer = () => {
         <div className="flex-1 min-w-[150px]">
           <h3 className="text-xl font-semibold mb-3">Pages</h3>
           <ul className="text-gray-400 space-y-2">
-           <li onClick={()=> navigate('/about')}  className=" cursor-pointer">About</li>
+           <li onClick={()=> navigate('/about-us')}  className=" cursor-pointer">About</li>
             <li onClick={()=> navigate('/blog')}  className=" cursor-pointer">Blog</li>
-            <li onClick={()=> navigate('/char-dham')}  className=" cursor-pointer">Char Dham</li>
+            <li onClick={()=> navigate('/char-dham-yatra-cab-service')}  className=" cursor-pointer">Char Dham Yatra</li>
             <li>Latest News</li>
             <li>Contact</li>
           </ul>

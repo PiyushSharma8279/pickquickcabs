@@ -14,8 +14,8 @@ const features = [
   },
   {
     icon: <FaClipboardList className="text-black text-5xl" />,
-    title: "Luxury Models Available ",
-    desc: "Mercedes E class, BMW, Audi, and many other premium rides are available for booking. ",
+    title: "Transparent Pricing",
+    desc: "Transparent fares inclusive of tolls, parking, and taxes. ",
   },
 ];
 

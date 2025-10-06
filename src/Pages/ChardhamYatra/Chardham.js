@@ -29,7 +29,7 @@ const NoidaToChardham = () => {
 
         {/* Intro Section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">Delhi to Char Dham Taxi Service</h2>
+          <h2 className="text-2xl font-semibold">Delhi to Char Dham Yatra Cab Service</h2>
           <p>
             Embark on a spiritual journey with <b>Pick Quick Cabs</b> from Delhi to the holy Char Dham —
             <b> Yamunotri, Gangotri, Kedarnath,</b> and <b>Badrinath</b>. Our reliable and comfortable

@@ -33,7 +33,7 @@ const Outstation = () => {
     const faqs = [
         {
             question: "How do I book an outstation cab with Pick Quick Cabs?",
-            answer: "Booking is simple! Go to Book A Ride pageand select pickup and drop locations, travel dates, and choose your preferred vehicle type and fill your name or contact details. You’ll receive a call to confirm your booking online, by phone, or WhatsApp for added convenience.",
+            answer: "Booking is simple! Go to Book A Ride page and select pickup and drop locations, travel dates, and choose your preferred vehicle type and fill your name or contact details. You’ll receive a call to confirm your booking online, by phone, or WhatsApp for added convenience.",
         },
         {
             question: "Is my fare inclusive of tolls, parking fees, and driver allowances?",
@@ -156,7 +156,7 @@ const Outstation = () => {
                     </p>
                     <h2 className=" py-4  md:text-4xl text-xl font-medium">Affordable Outstation Cab from anywhere in Delhi NCR</h2>
                     <p className=" text-lg">
-                       Pick Quick Cabs Taxi fares are transparent, and 5-10% lower for outstation travels. No Hidden Charges. No Extra Fares. No Additional Charges for Pre-booking. Book now andchoose the right cab for your Outstation trip.
+                       Pick Quick Cabs Taxi fares are transparent, and 5-10% lower for outstation travels. No Hidden Charges. No Extra Fares. No Additional Charges for Pre-booking. Book now and choose the right cab for your Outstation trip.
                        </p>
                     <h2 className=" py-4 md:py-10 md:text-4xl text-xl font-medium">Popular Outstation cabs from Delhi</h2>
                     <p className=" text-lg grid grid-cols-3 gap-4 text-green-500 font-medium">

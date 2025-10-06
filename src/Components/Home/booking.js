@@ -37,6 +37,7 @@ export default function BookingForm() {
       pickup: formData.pickup,
       dropoff: formData.dropoff,
       date: formData.date,
+      tripType: formData.tripType,
       time: formData.time,
     };
 
@@ -53,6 +54,7 @@ export default function BookingForm() {
             pickup: "",
             dropoff: "",
             date: "",
+            tripType: "",
             time: "",
           });
         },
@@ -180,6 +182,17 @@ export default function BookingForm() {
                 className="absolute right-5 top-1/2 transform -translate-y-1/2 text-yellow-400"
               />
             </div>
+             <select
+                name="tripType"
+                value={formData.tripType}
+                onChange={handleChange}
+                required
+                className="w-full  bg-[#1c1c1c] text-white px-5 py-4 rounded-full outline-none"
+              >
+                <option value="">Trip type</option>
+                <option value="Round Trip">Round Trip</option>
+                <option value="One Way">One Way</option>
+              </select>
 
             <button
               type="submit"

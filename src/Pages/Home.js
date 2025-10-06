@@ -21,7 +21,6 @@ function Home() {
         <>
         <Header/>
         <HomeSlider/>
-        <CarSearchForm/>
         <BookingForm/>
         <Content/>
         <Offering/>

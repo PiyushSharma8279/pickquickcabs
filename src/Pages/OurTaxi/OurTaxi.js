@@ -69,16 +69,24 @@ function OurTaxi() {
 
     const faqs = [
         {
-            question: "Can I make advance payment to book taxi?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+            question: "How can I book a taxi with Pick Quick Cabs?",
+            answer: "We strive to make booking as seamless as possible—please feel free to complete the online form on our website, call our contact number, or book via WhatsApp. If you book through a website, just choose your pick-up and drop-off points, select your preferred time, and complete the reservation in a few simple steps.",
         },
         {
-            question: "How much luxury taxi rates per minute?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+            question: "What types of taxis do you offer for city travel?",
+            answer: "Pick Quick Cabs provides a variety of vehicles, including sedans, hatchbacks and SUVs to match different travel group sizes and needs.",
         },
         {
-            question: "Is there any surcharge for Mercedes Benz?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+            question: "Can I pay for my ride by card or through digital payment methods?",
+            answer: "Yes, Pick Quick Cabs accepts multiple payment options, including cash, UPI, and direct bank transfer for your convenience. However, we currently do not accept debit or credit cards, but we will start accepting them soon.",
+        },
+         {
+            question: "Are your drivers professional and is my ride safe?",
+            answer: "All drivers are licensed, background-checked, and trained to prioritize your safety and comfort throughout the journey. The fleet is regularly sanitized and maintained.",
+        },
+         {
+            question: "Is there an extra charge for waiting, multiple stops, or cancellations?",
+            answer: "Waiting and multiple stops are possible—minimal additional charges may apply, which will be transparently communicated up front. Cancellation terms are fair; please check the policy on your booking confirmation for details.",
         },
     ];
 

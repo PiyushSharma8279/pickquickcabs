@@ -7,7 +7,7 @@ import outStation from "../../Images/businessman-in-cab.jpg"
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Outstation = () => {
-       useEffect(() => {
+    useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
@@ -30,30 +30,26 @@ const Outstation = () => {
     ];
 
 
-     const faqs = [
+    const faqs = [
         {
-            question: "Why I Should choose Pick Quick cabs for OutStation?",
-            answer: "Lower and Consistent Fares, Well-behaved Drivers, Advance Booking Facility, No Surge Pricing, No Ride Cancellation, 24x7 Customer Support, On-time pick-up, Well-maintained Cabs and Taxi sharing with other on your route to save money.",
-        },
-        {
-            question: "Can I Book Outstation Taxi in Advance?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+            question: "How do I book an outstation cab with Pick Quick Cabs?",
+            answer: "Booking is simple! Go to Book A Ride pageand select pickup and drop locations, travel dates, and choose your preferred vehicle type and fill your name or contact details. You’ll receive a call to confirm your booking online, by phone, or WhatsApp for added convenience.",
         },
         {
-            question: "How do I Pay and When to Pay?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+            question: "Is my fare inclusive of tolls, parking fees, and driver allowances?",
+            answer: "We provide transparent pricing. Toll charges and driver allowances are not included in the fare at Pick Quick Cabs, but please check your estimate for any extra or excluded charges before confirming your trip. Our team also describe you is there any other charges.",
         },
-         {
-            question: "Intercity Travel Fares are less for me, But what will the drivers gets ?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+        {
+            question: "Can I book one-way trips, or are only round-trips available?",
+            answer: "Pick Quick Cabs offers both one-way and round-trip bookings for outstation journeys. One-way trips can be more economical and convenient for customers who don’t plan to return immediately.",
         },
-         {
-            question: "What are the Cancellation Charges?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+        {
+            question: "What types of vehicles are available, and how do I choose the right one?",
+            answer: "We have a range of vehicles from hatchbacks to SUVs and Tempo Travellers to suit your group size and luggage needs. Always match your party size and luggage requirements to the vehicle type when booking for maximum comfort.",
         },
-         {
-            question: "What is the min km perday?",
-            answer: "Minimum Km per day is calculated from based on calender day from 12 AM to 12 PM as one day. And the charges for each day is calculated based on the same.",
+        {
+            question: "What is your cancellation and refund policy for outstation bookings?",
+            answer: "Plans can change, and we understand that. Our cancellation policies are simple. If you have booked a cab and paid the token money, your booking will be considered confirmed and you can cancel the cab, but you will have to inform us 6-8 hours before the pickup time. You can cancel the cab there will be no issue and you will get a refund. But if you cancel the cab 1 hour before the pickup time, there will be no refund issue.",
         },
     ];
 
@@ -69,11 +65,10 @@ const Outstation = () => {
                 <section className="w-full  flex flex-col md:flex-row items-center justify-between p-6 md:p-10 gap-10">
                     <div className="md:w-1/2 space-y-4">
                         <h1 className="text-3xl md:text-4xl font-bold">
-                            Outstation Cabs from Delhi NCR at Lowest Fares
+                            Lowest Fares for Outstation Cabs from Delhi NCR
                         </h1>
                         <p className="text-lg">
-                            Outstation Taxi from Delhi NCR starts at <strong>₹1,500/-</strong>.
-                            Book your cab in advance and get 5–10% cheaper fares.
+                            The cost of an outstation taxi from Delhi NCR starts at <strong>₹1,500</strong>. Book your cab in advance and get your cab on time at your doorstep
                         </p>
                     </div>
 
@@ -88,15 +83,14 @@ const Outstation = () => {
                 <section className="w-full bg-white py-10">
                     <div className="max-w-5xl mx-auto text-center">
                         <h2 className="text-3xl font-bold mb-8">
-                            Why choose Outstation Taxi from Quick Ride for your intercity travels?
+                            Why choose Outstation Taxi from Pick Quick Cabs for your intercity travels?
                         </h2>
                         <div className="grid md:grid-cols-3 gap-8">
                             <div>
                                 <div className="text-green-600 text-4xl mb-3">🧾</div>
                                 <h3 className="text-xl font-semibold mb-2">Lower Fares</h3>
                                 <p>
-                                    Travel at 5–10% lower fares than other outstation cabs.
-                                    Cheapest outstation taxi in Bangalore you can find.
+                                    Travel at a reduced rate of 5–10% compared to other outstation taxis. The most affordable transportation service in Delhi NCR for outstation trips.
                                 </p>
                             </div>
                             <div>
@@ -154,18 +148,16 @@ const Outstation = () => {
             </div>
             <div className=" flex justify-center">
                 <div className=" md:p-10 max-w-5xl">
-                    <h2 className=" py-4 md:text-4xl text-xl font-medium">Why choose Quick Ride for Outstation Travels</h2>
+                    <h2 className=" py-4 md:text-4xl text-xl font-medium">Why choose Pick Quick Cabs for Outstation Travels</h2>
                     <p className=" text-lg">
-                        When we plan to book outstation cabs online we consider a lot of thing, which outstation taxi service offers the best in class experience at lowest fares, on-time pickup, no last minute cancellation, professional drivers' behaviours and the list goes on. But why we’re so selective when comes to booking outstation cab online. It’s because of the past experiences on other taxi services from drivers reaching late for pick, not picking calls, cancelling the ride without customers’ consent and goes on.<br /><br />
-
-                        How Quick Ride overcomes all the above requirements for outstation travels.<br /><br />
-
-                        First, Quick Ride charges less commission from drivers for them to get higher earnings, Quick Ride shows the distance, fare and ride details to drivers before accepting the ride, which leads to almost zero cancellation. With a lot of transparency in information brings the change in driver behavioural issues and all the efforts made on drivers paves the path for a best in class taxi ride for customers.
+                        When we're looking to book an outstation cab online, we think about a lot of things, like which taxi service gives us the best experience for the lowest price, on-time pickups, no surprise cancellations, and friendly drivers, among other factors. So, why do we get so selective about booking an outstation cab online? It's due to previous experiences with other taxi services, where drivers frequently show up late for pickups, don't pick up the phone, and cancel rides without confirming with customers first, along with several of other problems.<br/><br/>
+                        How Pick Quick Cabs meets all of the following standards for trips outside of the city.<br/><br/>
+                        First, Pick Quick Cabs takes less commission from drivers so they may make more money. Second, Pick Quick Cabs tells drivers the distance, fare, and ride details before they accept the ride, which makes cancellations nearly impossible to do. A lot of clear information leads to changes in how drivers act, and all the work that has been done on drivers makes sure customers have the finest taxi experience possible.
                     </p>
-                    <h2 className=" py-4  md:text-4xl text-xl font-medium">Lowest Outstation Taxi from anywhere in Delhi NCR</h2>
+                    <h2 className=" py-4  md:text-4xl text-xl font-medium">Affordable Outstation Cab from anywhere in Delhi NCR</h2>
                     <p className=" text-lg">
-                       Quick Ride Taxi fares are transparent, and 5-10% lower for outstation travels. No Hidden Charges. No Extra Fares. No Additional Charges for Pre-booking. Book your  now. Choose the right Taxi for your Outstation commute from Hatchback to Sedan to SUV.
-                    </p>
+                       Pick Quick Cabs Taxi fares are transparent, and 5-10% lower for outstation travels. No Hidden Charges. No Extra Fares. No Additional Charges for Pre-booking. Book now andchoose the right cab for your Outstation trip.
+                       </p>
                     <h2 className=" py-4 md:py-10 md:text-4xl text-xl font-medium">Popular Outstation cabs from Delhi</h2>
                     <p className=" text-lg grid grid-cols-3 gap-4 text-green-500 font-medium">
                         <p>Delhi to Jaipur</p>
@@ -174,38 +166,38 @@ const Outstation = () => {
                         <p>Delhi to Manali</p>
                         <p>Delhi to Haridwar</p>
 
-                      
+
                     </p>
                 </div>
             </div>
             <section className="py-16 bg-gray-100">
-                            <div className="max-w-6xl mx-auto px-6">
-                                <div className="text-center mb-12">
-                                    <h2 className="sm:text-5xl text-3xl font-bold">FAQs of Pick Quick Cabs</h2>
+                <div className="max-w-6xl mx-auto px-6">
+                    <div className="text-center mb-12">
+                        <h2 className="sm:text-5xl text-3xl font-bold">FAQs of Pick Quick Cabs</h2>
+                    </div>
+
+                    <div className="space-y-4">
+                        {faqs.map((faq, index) => (
+                            <div
+                                key={index}
+                                className="bg-white rounded-lg shadow-md p-5 cursor-pointer transition"
+                                onClick={() => toggleFAQ(index)}
+                            >
+                                <div className="flex justify-between items-center">
+                                    <h3 className="text-lg font-semibold">{faq.question}</h3>
+                                    <span className="text-yellow-500">
+                                        {openIndex === index ? <FaMinus /> : <FaPlus />}
+                                    </span>
                                 </div>
-            
-                                <div className="space-y-4">
-                                    {faqs.map((faq, index) => (
-                                        <div
-                                            key={index}
-                                            className="bg-white rounded-lg shadow-md p-5 cursor-pointer transition"
-                                            onClick={() => toggleFAQ(index)}
-                                        >
-                                            <div className="flex justify-between items-center">
-                                                <h3 className="text-lg font-semibold">{faq.question}</h3>
-                                                <span className="text-yellow-500">
-                                                    {openIndex === index ? <FaMinus /> : <FaPlus />}
-                                                </span>
-                                            </div>
-            
-                                            {openIndex === index && (
-                                                <p className="mt-3 text-gray-600 bg-yellow-400 p-2">{faq.answer}</p>
-                                            )}
-                                        </div>
-                                    ))}
-                                </div>
+
+                                {openIndex === index && (
+                                    <p className="mt-3 text-gray-600 bg-yellow-400 p-2">{faq.answer}</p>
+                                )}
                             </div>
-                        </section>
+                        ))}
+                    </div>
+                </div>
+            </section>
             <Footer />
         </>
     );

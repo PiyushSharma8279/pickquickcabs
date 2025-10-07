@@ -52,7 +52,7 @@ function Header() {
   </div>
 
   {/* Navigation Menu */}
-  <ul className="hidden md:flex gap-6 lg:gap-8 font-semibold">
+  <ul className="hidden lg:flex gap-6 lg:gap-8 font-semibold">
     <li className="text-gray-600 font-bold cursor-pointer hover:text-black" onClick={()=> navigate('/')}>HOME</li>
     <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/about-us')}>ABOUT</li>
     <li className="cursor-pointer text-gray-600 font-bold hover:text-black" onClick={()=> navigate('/our-taxi-service')}>OUR TAXI</li>
@@ -63,7 +63,7 @@ function Header() {
 
   {/* Mobile Menu Button */}
   <button
-    className="md:hidden text-black text-2xl"
+    className="lg:hidden text-black text-2xl"
     onClick={() => setMenuOpen(!menuOpen)}
   >
     {menuOpen ? <FaTimes /> : <FaBars />}
@@ -81,7 +81,7 @@ function Header() {
 
 
       {menuOpen && (
-        <div className="md:hidden bg-yellow-300 text-black font-semibold flex flex-col gap-4 px-6 py-6 fixed top-32 z-50 left-0 right-0">
+        <div className="lg:hidden bg-yellow-300 text-black font-semibold flex flex-col gap-4 px-6 py-6 fixed top-32 z-50 left-0 right-0">
           <p onClick={()=> navigate('/')}>HOME</p>
           <p onClick={()=> navigate('/about-us')}>ABOUT</p>
           <p onClick={()=> navigate('/our-taxi-service')}>OUR TAXI</p>

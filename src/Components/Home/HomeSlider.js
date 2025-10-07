@@ -18,17 +18,17 @@ function HomeSlider() {
     },
     {
        img: taxi2,
-       title: "Affordable and Trusted Taxi Services 24/7 ",
+       title: "Truly Quick and Reliable Cab Service in Delhi ",
        desc: "Enjoy your ride with ultimate comfort and guaranteed confirmation. ",
     },
     {
        img: taxi3,
-       title: "Affordable and Trusted Taxi Services 24/7 ",
+       title: "Professional Drivers, Clean & Safe Vehicles ",
        desc: "Enjoy your ride with ultimate comfort and guaranteed confirmation. ",
     },
       {
        img: taxi4,
-       title: "Affordable and Trusted Taxi Services 24/7 ",
+       title: "Quick Cab Service in Delhi NCR",
        desc: "Enjoy your ride with ultimate comfort and guaranteed confirmation. ",
     },
   ];

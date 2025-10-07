@@ -23,11 +23,11 @@ export default function BookingForm() {
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  // handle submit
+  
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Replace with your actual EmailJS IDs
+  
     const serviceId = "service_q4c7kio";
     const templateId = "template_zzidn0p";
     const publicKey = "UN1tRImChgV6wg9Qc";
@@ -35,7 +35,7 @@ export default function BookingForm() {
     const templateParams = {
       name: formData.name,
       email: formData.email,
-      phone: formData.phone, // ✅ added phone
+      phone: formData.phone, 
       passengers: formData.passengers,
       pickup: formData.pickup,
       dropoff: formData.dropoff,

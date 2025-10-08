@@ -2,66 +2,46 @@ import React from "react";
 
 const pricingData = [
   {
-    vehicle: "Indica",
+    vehicle: "Wagonr",
     airport: "₹700",
-    insideCity8: "₹1,500",
-    insideCity12: "₹1,800",
+    insideCity8: "₹1,600",
+    insideCity12: "₹2,000",
     outstation: "₹9",
   },
   {
-    vehicle: "Indigo",
-    airport: "₹750",
-    insideCity8: "₹1,600",
-    insideCity12: "₹1,900",
-    outstation: "₹9.5",
-  },
-  {
     vehicle: "Swift Dzire",
-    airport: "₹800",
-    insideCity8: "₹1,700",
-    insideCity12: "₹2,000",
+    airport: "₹900",
+    insideCity8: "₹1,900",
+    insideCity12: "₹2,500",
     outstation: "₹10.5",
   },
+ 
   {
-    vehicle: "Honda Amaze / Etios",
-    airport: "₹850",
-    insideCity8: "₹1,800",
-    insideCity12: "₹2,200",
-    outstation: "₹12.5",
+    vehicle: "Kia Carens",
+    airport: "₹1,100",
+    insideCity8: "₹2,500",
+    insideCity12: "₹3,000",
+    outstation: "₹14",
   },
   {
-    vehicle: "Mobilio / Ertiga",
-    airport: "₹900",
-    insideCity8: "₹2,650",
-    insideCity12: "₹2,900",
-    outstation: "₹15",
+    vehicle: "Ertiga",
+    airport: "₹1,200",
+    insideCity8: "₹2,500",
+    insideCity12: "₹3,000",
+    outstation: "₹14",
   },
   {
     vehicle: "Toyota Innova",
-    airport: "₹1,100",
-    insideCity8: "₹2,750",
-    insideCity12: "₹3,250",
-    outstation: "₹18",
-  },
-  {
-    vehicle: "Toyota Innova Crysta",
-    airport: "₹1,200",
-    insideCity8: "₹2,850",
-    insideCity12: "₹3,650",
-    outstation: "₹19",
-  },
-  {
-    vehicle: "Honda City",
     airport: "₹1,500",
-    insideCity8: "₹2,600",
-    insideCity12: "₹3,400",
-    outstation: "₹19",
-  },
+    insideCity8: "₹3,200",
+    insideCity12: "₹4,250",
+    outstation: "₹18",
+  }, 
   {
-    vehicle: "Tempo Traveller",
-    airport: "₹2,000",
-    insideCity8: "₹5,650",
-    insideCity12: "₹6,750",
+    vehicle: "Force Traveller",
+    airport: "₹2,000*",
+    insideCity8: "₹5,650*",
+    insideCity12: "₹8,750*",
     outstation: "₹25",
   },
 ];
@@ -102,11 +82,12 @@ export default function PricingTable() {
 
         {/* Footer Notes */}
         <div className="mt-4 text-sm text-gray-700">
+        <p className=" font-bold">Toll and Parking Prices are not Included</p>
           <p>
             <strong>Driver Charges (After 10PM):</strong> Rs.250
           </p>
           <p>
-            <strong>Outstation:</strong> Min. 250KM / Day
+            <strong>Outstation:</strong> Min. 250KM 
           </p>
         </div>
       </div>

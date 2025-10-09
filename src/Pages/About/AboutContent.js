@@ -1,4 +1,5 @@
 import React from "react";
+import aboutImg from "../../Images/about.jpg"
 
 function AboutContent() {
     return (
@@ -27,7 +28,7 @@ function AboutContent() {
                 {/* Right: Image */}
                 <div className="flex justify-center">
                     <img
-                        src="https://old3.commonsupport.com/wp/conexi/wp-content/uploads/2020/04/about-1-1.jpg"
+                        src={aboutImg}
                         alt="About Conexi"
                         className="rounded-2xl shadow-lg hover:scale-105 transform transition duration-500"
                     />

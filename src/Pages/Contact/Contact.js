@@ -3,6 +3,7 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import contact from "../../Images/contact.jpg";
 import emailjs from "@emailjs/browser";
+import useSEO from "../../Hooks/UseSeo";
 
 const slide = {
   img: contact,
@@ -17,6 +18,13 @@ function MyMap() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+   useSEO({
+      title: "Contact Us | Pick Quick Cabs",
+      description:
+        "If you want to contact Pick Quick Cabs, please fill the contact form",
+      url: "https://www.pickquickcabs.com/contact-us",
+    });
 
   const sendEmail = (e) => {
     e.preventDefault();

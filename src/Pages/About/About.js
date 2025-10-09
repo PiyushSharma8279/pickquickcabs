@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import WhyChooseUs from "../../Components/Home/WhyChooseUs";
-import Content from "../../Components/Home/Content";
 import taxi2 from "../../Images/taxi-slider-2.jpg"
 import AboutContent from "./AboutContent";
+import useSEO from "../../Hooks/UseSeo";
 
 function About() {
     const slide = {
@@ -16,6 +16,13 @@ function About() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    useSEO({
+    title: "About Us | Pick Quick Cabs",
+    description:
+      "Read More about Pick Quick Cabs on our website",
+    url: "https://www.pickquickcabs.com/about-us",
+  });
 
     return (
         <>

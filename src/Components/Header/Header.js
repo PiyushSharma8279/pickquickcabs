@@ -92,7 +92,7 @@ function Header() {
 
           <div className="flex items-center gap-2 bg-black text-yellow-400 px-4 py-2 rounded-lg mb-4">
             <FaPhoneAlt className="text-yellow-400" />
-            <span className="text-sm md:text-base">888 888 8888</span>
+            <span className="text-sm md:text-base">84 47 43 38 52</span>
           </div>
         </div>
       )}

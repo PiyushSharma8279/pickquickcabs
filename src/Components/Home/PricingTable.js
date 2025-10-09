@@ -15,7 +15,7 @@ const pricingData = [
     insideCity12: "₹2,500",
     outstation: "₹10.5",
   },
- 
+
   {
     vehicle: "Kia Carens",
     airport: "₹1,100",
@@ -36,7 +36,7 @@ const pricingData = [
     insideCity8: "₹3,200",
     insideCity12: "₹4,250",
     outstation: "₹18",
-  }, 
+  },
   {
     vehicle: "Force Traveller",
     airport: "₹2,000*",
@@ -82,12 +82,12 @@ export default function PricingTable() {
 
         {/* Footer Notes */}
         <div className="mt-4 text-sm text-gray-700">
-        <p className=" font-bold">Toll and Parking Prices are not Included</p>
+          <p className=" font-bold">Toll and Parking Prices are not Included</p>
           <p>
             <strong>Driver Charges (After 10PM):</strong> Rs.250
           </p>
           <p>
-            <strong>Outstation:</strong> Min. 250KM 
+            <strong>Outstation:</strong> Min. 250KM
           </p>
         </div>
       </div>

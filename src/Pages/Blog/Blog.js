@@ -6,6 +6,7 @@ import blog1 from "../../Images/taxi-slider-2.jpg";
 import blog2 from "../../Images/videoImage.jpg";
 import blog3 from "../../Images/taxi-booking.jpg";
 import blog4 from "../../Images/contentImage.png";
+import useSEO from "../../Hooks/UseSeo";
 
 const blogs = [
   {
@@ -55,6 +56,14 @@ export default function BlogGrid() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+        useSEO({
+              title: "Our Blogs | Pick Quick Cabs",
+              description:
+                "Read Our Latest Blogs on our website",
+              url: "https://www.pickquickcabs.com/blog",
+            });
+      
 
   return (
     <>

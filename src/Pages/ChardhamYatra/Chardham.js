@@ -2,13 +2,18 @@ import React, { useEffect } from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import { useNavigate } from "react-router-dom";
-
+import useSEO from "../../Hooks/UseSeo";
 const NoidaToChardham = () => {
   const navigate = useNavigate()
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  useSEO({
+    title: "Char Dham Yatra Cab/Taxi Service in Delhi | Pick Quick Cabs",
+    description:
+      "Plan your spiritual journey with our Char Dham Yatra Cab/Taxi Service in Delhi. Safe rides, expert drivers & easy booking. Contact Now.",
+    url: "https://www.pickquickcabs.com/char-dham-yatra-cab-service",
+  });
   return (
     <>
       <Header />
@@ -167,7 +172,7 @@ const NoidaToChardham = () => {
               <p>Seats: 4+1</p>
               <p>Starting Fare: ₹12/km</p>
               <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
-              onClick={()=> navigate('/book-a-ride')}
+                onClick={() => navigate('/book-a-ride')}
               >
                 Book Cab
               </button>
@@ -184,7 +189,7 @@ const NoidaToChardham = () => {
               <p>Seats: 6+1</p>
               <p>Starting Fare: ₹16/km</p>
               <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
-              onClick={()=> navigate('/book-a-ride')}
+                onClick={() => navigate('/book-a-ride')}
               >
                 Book Cab
               </button>
@@ -201,7 +206,7 @@ const NoidaToChardham = () => {
               <p>Seats: 4+1</p>
               <p>Starting Fare: ₹10/km</p>
               <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
-              onClick={()=> navigate('/book-a-ride')}
+                onClick={() => navigate('/book-a-ride')}
               >
                 Book Cab
               </button>

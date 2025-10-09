@@ -3,11 +3,20 @@ import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import taxi3 from "../../Images/taxi-slider-3.jpeg";
 import emailjs from "@emailjs/browser";
+import useSEO from "../../Hooks/UseSeo";
 
 function BookARide() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  
+          useSEO({
+                title: "Book A Ride with Pick Quick Cabs",
+                description:
+                  "Book a ride with Pick Quick Cabs for safe, quick, and affordable travel. Enjoy hassle-free booking and smooth rides every time.",
+                url: "https://www.pickquickcabs.com/book-a-ride",
+              });
 
   const [formData, setFormData] = useState({
     name: "",
@@ -109,7 +118,7 @@ function BookARide() {
       <Header />
 
       {/* Banner */}
-      <div
+      {/* <div
         className="relative mt-32 h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white px-4"
         style={{
           backgroundImage: `url(${slide.img})`,
@@ -122,15 +131,15 @@ function BookARide() {
             {slide.title}
           </h1>
         </div>
-      </div>
+      </div> */}
 
       {/* Booking Form */}
-      <div className="max-w-4xl px-6 py-16">
+      <div className="max-w-4xl px-6 py-16 mt-32">
         <p className="text-yellow-500 text-sm mb-2">• Rides – Always on Time</p>
         <h2 className="text-4xl md:text-5xl font-bold mb-8">
           Explore Instant and Easy Bookings
         </h2>
-        <p className="py-4">
+        <p className="py-4 font-medium">
           Pick Quick Cabs offer instant and easy bookings straight from your phone.
           Give us a call or make your booking from our official website. We’re also
           working on our app to make ride bookings effortless. Enjoy the most affordable

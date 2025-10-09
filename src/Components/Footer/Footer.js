@@ -88,12 +88,12 @@ const Footer = () => {
         
         </div>
         <div className="flex space-x-4 mt-2 md:mt-0">
-          <a href="" className="hover:underline">
+          <p onClick={()=> navigate('/terms-and-conditions')} className="hover:underline cursor-pointer">
             Terms of Use
-          </a>
-          <a href="" className="hover:underline">
+          </p>
+         <p onClick={()=> navigate('/privacy-policy')} className="hover:underline cursor-pointer">
             Privacy Policy
-          </a>
+          </p>
         </div>
       </div>
 

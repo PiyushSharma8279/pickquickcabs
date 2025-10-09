@@ -8,6 +8,8 @@ import BookARide from './Pages/BookARide/BookARide'
 import MyMap from './Pages/Contact/Contact'
 import OutStation from "./Pages/OutStation/OutStation"
 import NoidaToChardham from './Pages/ChardhamYatra/Chardham'
+import TermsAndCondition from './Pages/TermsAndCondition/TermsAndCondition'
+import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy'
 function App() {
   return (
     <>
@@ -21,6 +23,9 @@ function App() {
       <Route path='/contact-us' element={<MyMap/>}/>
       <Route path='/outstation-cab-service-near-me' element={<OutStation/>}/>
       <Route path='/char-dham-yatra-cab-service' element={<NoidaToChardham/>}/>
+      <Route path='terms-and-conditions' element={<TermsAndCondition/>}/>
+      <Route path='privacy-policy' element={<PrivacyPolicy/>}/>
+
 
 
 

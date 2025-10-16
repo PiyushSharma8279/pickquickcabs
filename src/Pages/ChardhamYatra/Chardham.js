@@ -22,7 +22,7 @@ const NoidaToChardham = () => {
         <section className="relative bg-gray-100 rounded-lg overflow-hidden">
           <img
             src="https://www.traveltoindia.org/blog/wp-content/uploads/2021/02/char-dham-1-1.webp"
-            alt="Noida to Chardham Taxi"
+            alt="Delhi to Char Dham Yatra Taxi Service "
             className="w-full h-80 object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
@@ -44,96 +44,97 @@ const NoidaToChardham = () => {
 
         {/* Char Dham Details */}
         <section className="space-y-10">
-          <h3 className="text-2xl font-semibold text-center">Char Dham Yatra Overview</h3>
+  <h3 className="text-2xl font-semibold text-center">Char Dham Yatra Overview</h3>
 
-          {/* Yamunotri */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <img
-              src="https://temple.yatradham.org/public/Product/temple/temple_fO4FL40m_202506241837100.webp"
-              alt="Yamunotri Dham"
-              className="w-full h-72 object-cover rounded-lg shadow"
-            />
-            <div>
-              <h4 className="text-xl font-semibold">Yamunotri Dham</h4>
-              <p className="mt-2">
-                The sacred source of the Yamuna River, <b>Yamunotri</b> is dedicated to Goddess Yamuna.
-                It is located in the Garhwal Himalayas and offers a breathtaking view of snow-clad peaks.
-              </p>
-              <ul className="list-disc pl-5 mt-3 space-y-1">
-                <li><b>Location:</b> Uttarkashi District</li>
-                <li><b>Main Temple:</b> Yamuna Devi Temple</li>
-                <li><b>Best Time to Visit:</b> May to October</li>
-                <li><b>Highlights:</b> Hot water springs of Surya Kund & Divya Shila</li>
-              </ul>
-            </div>
-          </div>
+  {/* Yamunotri */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <img
+      src="https://temple.yatradham.org/public/Product/temple/temple_fO4FL40m_202506241837100.webp"
+      alt="Yamunotri Dham"
+      className="w-full h-72 object-cover rounded-lg shadow order-1"
+    />
+    <div className="order-2">
+      <h4 className="text-xl font-semibold">Yamunotri Dham</h4>
+      <p className="mt-2">
+        The sacred source of the Yamuna River, <b>Yamunotri</b> is dedicated to Goddess Yamuna.
+        It is located in the Garhwal Himalayas and offers a breathtaking view of snow-clad peaks.
+      </p>
+      <ul className="list-disc pl-5 mt-3 space-y-1">
+        <li><b>Location:</b> Uttarkashi District</li>
+        <li><b>Main Temple:</b> Yamuna Devi Temple</li>
+        <li><b>Best Time to Visit:</b> May to October</li>
+        <li><b>Highlights:</b> Hot water springs of Surya Kund & Divya Shila</li>
+      </ul>
+    </div>
+  </div>
 
-          {/* Gangotri */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:flex-row-reverse">
-            <div>
-              <h4 className="text-xl font-semibold">Gangotri Dham</h4>
-              <p className="mt-2">
-                <b>Gangotri</b> marks the origin of the holy Ganga River and is dedicated to Goddess Ganga.
-                Surrounded by majestic glaciers and pine forests, it symbolizes purity and spiritual awakening.
-              </p>
-              <ul className="list-disc pl-5 mt-3 space-y-1">
-                <li><b>Location:</b> Uttarkashi District</li>
-                <li><b>Main Temple:</b> Gangotri Temple</li>
-                <li><b>Best Time to Visit:</b> May to October</li>
-                <li><b>Highlights:</b> Bhagirath Shila & Gaumukh Glacier Trek</li>
-              </ul>
-            </div>
-            <img
-              src="https://static.toiimg.com/photo/msid-87566208,width-96,height-65.cms"
-              alt="Gangotri Dham"
-              className="w-full h-72 object-cover rounded-lg shadow"
-            />
-          </div>
+  {/* Gangotri */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div className="order-2 md:order-1">
+      <h4 className="text-xl font-semibold">Gangotri Dham</h4>
+      <p className="mt-2">
+        <b>Gangotri</b> marks the origin of the holy Ganga River and is dedicated to Goddess Ganga.
+        Surrounded by majestic glaciers and pine forests, it symbolizes purity and spiritual awakening.
+      </p>
+      <ul className="list-disc pl-5 mt-3 space-y-1">
+        <li><b>Location:</b> Uttarkashi District</li>
+        <li><b>Main Temple:</b> Gangotri Temple</li>
+        <li><b>Best Time to Visit:</b> May to October</li>
+        <li><b>Highlights:</b> Bhagirath Shila & Gaumukh Glacier Trek</li>
+      </ul>
+    </div>
+    <img
+      src="https://static.toiimg.com/photo/msid-87566208,width-96,height-65.cms"
+      alt="Gangotri Dham"
+      className="w-full h-72 object-cover rounded-lg shadow order-1 md:order-2"
+    />
+  </div>
 
-          {/* Kedarnath */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <img
-              src="https://t.eucdn.in/tourism/lg-jpg/kedarnath-2240900.jpg"
-              alt="Kedarnath Dham"
-              className="w-full h-72 object-cover rounded-lg shadow"
-            />
-            <div>
-              <h4 className="text-xl font-semibold">Kedarnath Dham</h4>
-              <p className="mt-2">
-                Dedicated to Lord Shiva, <b>Kedarnath</b> is one of the twelve Jyotirlingas and is surrounded
-                by the snow-covered peaks of the Himalayas. Pilgrims trek to the temple through scenic routes.
-              </p>
-              <ul className="list-disc pl-5 mt-3 space-y-1">
-                <li><b>Location:</b> Rudraprayag District</li>
-                <li><b>Main Temple:</b> Kedarnath Temple</li>
-                <li><b>Best Time to Visit:</b> May to October</li>
-                <li><b>Highlights:</b> Trekking route from Gaurikund & stunning mountain vistas</li>
-              </ul>
-            </div>
-          </div>
+  {/* Kedarnath */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <img
+      src="https://t.eucdn.in/tourism/lg-jpg/kedarnath-2240900.jpg"
+      alt="Kedarnath Dham"
+      className="w-full h-72 object-cover rounded-lg shadow order-1"
+    />
+    <div className="order-2">
+      <h4 className="text-xl font-semibold">Kedarnath Dham</h4>
+      <p className="mt-2">
+        Dedicated to Lord Shiva, <b>Kedarnath</b> is one of the twelve Jyotirlingas and is surrounded
+        by the snow-covered peaks of the Himalayas. Pilgrims trek to the temple through scenic routes.
+      </p>
+      <ul className="list-disc pl-5 mt-3 space-y-1">
+        <li><b>Location:</b> Rudraprayag District</li>
+        <li><b>Main Temple:</b> Kedarnath Temple</li>
+        <li><b>Best Time to Visit:</b> May to October</li>
+        <li><b>Highlights:</b> Trekking route from Gaurikund & stunning mountain vistas</li>
+      </ul>
+    </div>
+  </div>
 
-          {/* Badrinath */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:flex-row-reverse">
-            <div>
-              <h4 className="text-xl font-semibold">Badrinath Dham</h4>
-              <p className="mt-2">
-                <b>Badrinath</b>, dedicated to Lord Vishnu, is located between the Nar and Narayan mountain
-                ranges along the banks of the Alaknanda River. It is the last stop in the Char Dham circuit.
-              </p>
-              <ul className="list-disc pl-5 mt-3 space-y-1">
-                <li><b>Location:</b> Chamoli District</li>
-                <li><b>Main Temple:</b> Badrinath Temple</li>
-                <li><b>Best Time to Visit:</b> May to November</li>
-                <li><b>Highlights:</b> Tapt Kund, Neelkanth Peak & Mana Village</li>
-              </ul>
-            </div>
-            <img
-              src="https://www.chardham-pilgrimage-tour.com/assets/images/badrinath-banner3.webp"
-              alt="Badrinath Dham"
-              className="w-full h-72 object-cover rounded-lg shadow"
-            />
-          </div>
-        </section>
+  {/* Badrinath */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div className="order-2 md:order-1">
+      <h4 className="text-xl font-semibold">Badrinath Dham</h4>
+      <p className="mt-2">
+        <b>Badrinath</b>, dedicated to Lord Vishnu, is located between the Nar and Narayan mountain
+        ranges along the banks of the Alaknanda River. It is the last stop in the Char Dham circuit.
+      </p>
+      <ul className="list-disc pl-5 mt-3 space-y-1">
+        <li><b>Location:</b> Chamoli District</li>
+        <li><b>Main Temple:</b> Badrinath Temple</li>
+        <li><b>Best Time to Visit:</b> May to November</li>
+        <li><b>Highlights:</b> Tapt Kund, Neelkanth Peak & Mana Village</li>
+      </ul>
+    </div>
+    <img
+      src="https://www.chardham-pilgrimage-tour.com/assets/images/badrinath-banner3.webp"
+      alt="Badrinath Dham"
+      className="w-full h-72 object-cover rounded-lg shadow order-1 md:order-2"
+    />
+  </div>
+</section>
+
 
         {/* Travel Info */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -170,7 +171,7 @@ const NoidaToChardham = () => {
               />
               <h4 className="text-lg font-medium">Sedan (Dzire / Similar)</h4>
               <p>Seats: 4+1</p>
-              <p>Starting Fare: ₹12/km</p>
+              <p>Starting Fare: ₹14/km</p>
               <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
                 onClick={() => navigate('/book-a-ride')}
               >
@@ -187,7 +188,7 @@ const NoidaToChardham = () => {
               />
               <h4 className="text-lg font-medium">SUV / Innova</h4>
               <p>Seats: 6+1</p>
-              <p>Starting Fare: ₹16/km</p>
+              <p>Starting Fare: ₹20/km</p>
               <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
                 onClick={() => navigate('/book-a-ride')}
               >
@@ -198,13 +199,13 @@ const NoidaToChardham = () => {
             {/* WagonR */}
             <div className="border rounded-lg p-4 flex flex-col items-center space-y-3">
               <img
-                src="https://www.varunmaruti.com/uploads/products/colors/wagonr-superior-white.png"
-                alt="WagonR"
+                src="https://htcms-prod-images.s3.ap-south-1.amazonaws.com/htmobile1/marutisuzuki_ertiga/images/colour_marutisuzuki-ertiga_pearl-metallic-arctic-white_600x400.jpg"
+                alt="Ertiga"
                 className="w-full h-32 object-cover rounded"
               />
-              <h4 className="text-lg font-medium">WagonR</h4>
-              <p>Seats: 4+1</p>
-              <p>Starting Fare: ₹10/km</p>
+              <h4 className="text-lg font-medium">Ertiga</h4>
+              <p>Seats: 6+1</p>
+              <p>Starting Fare: ₹16/km</p>
               <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600"
                 onClick={() => navigate('/book-a-ride')}
               >

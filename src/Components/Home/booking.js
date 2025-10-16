@@ -8,7 +8,7 @@ export default function BookingForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "", // ✅ new field
+    phone: "", 
     passengers: "",
     pickup: "",
     dropoff: "",
@@ -94,7 +94,7 @@ export default function BookingForm() {
           </div>
         </div>
 
-        {/* Right Section */}
+   
         <div className="md:w-1/2 bg-black text-white px-6 py-12 md:py-16">
           <p className="text-yellow-500 text-sm mb-2">• Wanna Book Your Ride?</p>
           <h2 className="text-3xl md:text-5xl font-bold mb-8">
@@ -126,7 +126,7 @@ export default function BookingForm() {
               />
             </div>
 
-            {/* ✅ Phone Field */}
+            
             <div className="relative">
               <input
                 type="tel"
@@ -234,7 +234,7 @@ export default function BookingForm() {
         </div>
       </div>
 
-      {/* Bottom Call Box */}
+      
       <div className="bg-yellow-400 py-6 px-6 flex flex-col md:flex-row items-center justify-between text-black gap-4">
         <div className="flex items-center gap-4 text-lg font-medium">
           <FontAwesomeIcon icon={faPhone} className="text-2xl" />

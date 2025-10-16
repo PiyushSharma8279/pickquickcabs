@@ -166,7 +166,19 @@ function OurTaxi() {
                         </button>
                     </div>
                 ))}
+                 <div className="mt-4 text-sm text-gray-700 pl-4">
+          <p className=" font-bold">Toll and Parking Prices are not Included</p>
+          <p>
+            <strong>Outstation:</strong> Min. 250KM
+          </p>
+          <p>
+            <strong>Driver Charges After Booking Period Over:</strong> Rs.200/hour (Delhi NCR)
+            
+          </p>
+          <strong>Cab Charges After Destination KM Complete :</strong> Rs.13/km
+        </div>
             </div>
+            
 
             {/* Call To Action */}
             <div className="bg-yellow-400 py-16 px-6 flex justify-center">
@@ -210,6 +222,7 @@ function OurTaxi() {
                         ))}
                     </div>
                 </div>
+                
             </section>
 
             <Footer />

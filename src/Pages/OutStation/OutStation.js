@@ -4,8 +4,11 @@ import Footer from "../../Components/Footer/Footer";
 import outStation from "../../Images/businessman-in-cab.jpg";
 import useSEO from "../../Hooks/UseSeo";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; // ✅ import navigation hook
 
 const Outstation = () => {
+  const navigate = useNavigate(); // ✅ create navigate function
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -19,21 +22,22 @@ const Outstation = () => {
 
   const [openIndex, setOpenIndex] = useState(null);
 
+  // ✅ Add path for each route
   const fares = [
-    { from: "Delhi", to: "Dehradun", oneWay: "₹3,700", roundTrip: "₹7,000" },
-    { from: "Delhi", to: "Rishikesh", oneWay: "₹3,300", roundTrip: "₹6,500" },
-    { from: "Delhi", to: "Haridwar", oneWay: "₹3,300", roundTrip: "₹6,000" },
-    { from: "Delhi", to: "Nanital", oneWay: "₹4,500", roundTrip: "₹8,000" },
-    { from: "Delhi", to: "Haldwani", oneWay: "₹3,800", roundTrip: "₹7,000" },
-    { from: "Delhi", to: "Rudrapur", oneWay: "₹3,500", roundTrip: "₹6,500" },
-    { from: "Delhi", to: "Agra", oneWay: "₹2,700", roundTrip: "₹5,100" },
-    { from: "Delhi", to: "Mathura", oneWay: "₹2,500", roundTrip: "₹4,500" },
-    { from: "Delhi", to: "Jaipur Old", oneWay: "₹3,500", roundTrip: "₹6,500" },
-    { from: "Delhi", to: "Jaipur New", oneWay: "₹4,000", roundTrip: "₹7,500" },
-    { from: "Delhi", to: "Kuchidham", oneWay: "₹4,500", roundTrip: "₹8,500" },
-    { from: "Delhi", to: "Masuri", oneWay: "₹4,500", roundTrip: "₹8,000" },
-    { from: "Delhi", to: "Shimla", oneWay: "₹5,500", roundTrip: "₹10,000" },
-    { from: "Delhi", to: "Manali", oneWay: "₹7,500", roundTrip: "₹14,000" },
+    { from: "Delhi", to: "Dehradun", oneWay: "₹3,700", roundTrip: "₹7,000", path: "/delhi-to-dehradun-taxi-service" },
+    { from: "Delhi", to: "Rishikesh", oneWay: "₹3,300", roundTrip: "₹6,500", path: "/delhi-to-rishikesh-taxi-service" },
+    { from: "Delhi", to: "Haridwar", oneWay: "₹3,300", roundTrip: "₹6,000", path: "/delhi-to-haridwar-taxi-service" },
+    { from: "Delhi", to: "Nainital", oneWay: "₹4,500", roundTrip: "₹8,000", path: "/delhi-to-nanital-taxi-service" },
+    { from: "Delhi", to: "Haldwani", oneWay: "₹3,800", roundTrip: "₹7,000", path: "/delhi-to-haldwani-taxi-service" },
+    { from: "Delhi", to: "Rudrapur", oneWay: "₹3,500", roundTrip: "₹6,500", path: "/delhi-to-rudrapur-taxi-service" },
+    { from: "Delhi", to: "Agra", oneWay: "₹2,700", roundTrip: "₹5,100", path: "/delhi-to-agra-taxi-service" },
+    { from: "Delhi", to: "Mathura", oneWay: "₹2,500", roundTrip: "₹4,500", path: "/delhi-to-mathura-taxi-service" },
+    { from: "Delhi", to: "Jaipur Old", oneWay: "₹3,500", roundTrip: "₹6,500", path: "/delhi-to-jaipur-taxi-service" },
+    { from: "Delhi", to: "Jaipur New", oneWay: "₹4,000", roundTrip: "₹7,500", path: "/delhi-to-jaipur-taxi-service" },
+    { from: "Delhi", to: "Kainchi Dham", oneWay: "₹4,500", roundTrip: "₹8,500", path: "/delhi-to-kainchi-dham-taxi-service" },
+    { from: "Delhi", to: "Mussoorie", oneWay: "₹4,500", roundTrip: "₹8,000", path: "/delhi-to-mussoorie-taxi-service" },
+    { from: "Delhi", to: "Shimla", oneWay: "₹5,500", roundTrip: "₹10,000", path: "/delhi-to-shimla-taxi-service" },
+    { from: "Delhi", to: "Manali", oneWay: "₹7,500", roundTrip: "₹14,000", path: "/delhi-to-manali-taxi-service" },
   ];
 
   const faqs = [
@@ -72,8 +76,8 @@ const Outstation = () => {
     <>
       <Header />
 
-      {/* HERO SECTION */}
       <div className="flex flex-col items-center bg-gray-50 text-gray-800 mt-32">
+        {/* Hero Section */}
         <section className="w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-10 gap-10 max-w-7xl mx-auto">
           <div className="md:w-1/2 space-y-5">
             <h1 className="text-3xl md:text-5xl font-bold leading-tight">
@@ -92,7 +96,7 @@ const Outstation = () => {
           />
         </section>
 
-        {/* WHY CHOOSE SECTION */}
+        {/* Features Section */}
         <section className="w-full bg-white py-16 px-6">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-10">
@@ -102,33 +106,25 @@ const Outstation = () => {
               <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
                 <div className="text-green-600 text-5xl mb-3">🧾</div>
                 <h3 className="text-xl font-semibold mb-2">Lower Fares</h3>
-                <p>
-                  Travel at 5–10% lower rates than competitors. The most affordable taxi service in Delhi NCR for outstation trips.
-                </p>
+                <p>Travel at 5–10% lower rates than competitors. The most affordable taxi service in Delhi NCR for outstation trips.</p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
                 <div className="text-green-600 text-5xl mb-3">⏰</div>
-                <h3 className="text-xl font-semibold mb-2">
-                  Schedule in Advance
-                </h3>
-                <p>
-                  Pre-book your outstation cab and enjoy on-time doorstep pickup anywhere in the city.
-                </p>
+                <h3 className="text-xl font-semibold mb-2">Schedule in Advance</h3>
+                <p>Pre-book your outstation cab and enjoy on-time doorstep pickup anywhere in the city.</p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
                 <div className="text-green-600 text-5xl mb-3">💰</div>
                 <h3 className="text-xl font-semibold mb-2">Transparent Pricing</h3>
-                <p>
-                  No hidden charges. Transparent fares with tolls and taxes clearly mentioned.
-                </p>
+                <p>No hidden charges. Transparent fares with tolls and taxes clearly mentioned.</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* FARES TABLE */}
+        {/* Fares Table */}
         <section className="w-full max-w-5xl bg-gray-100 p-8 rounded-2xl my-10 shadow-md">
           <h2 className="text-3xl font-bold text-center mb-6">
             Quick Ride Fares for Outstation Taxi from Delhi NCR
@@ -141,18 +137,24 @@ const Outstation = () => {
                   <th className="p-3">To</th>
                   <th className="p-3">One Way</th>
                   <th className="p-3">Round Trip</th>
+                  <th className="p-3">For More Info.</th>
                 </tr>
               </thead>
               <tbody>
                 {fares.map((fare, idx) => (
-                  <tr
-                    key={idx}
-                    className="border-t border-gray-200 hover:bg-yellow-50 transition"
-                  >
+                  <tr key={idx} className="border-t border-gray-200 hover:bg-yellow-50 transition">
                     <td className="p-3">{fare.from}</td>
                     <td className="p-3">{fare.to}</td>
                     <td className="p-3">{fare.oneWay}</td>
                     <td className="p-3">{fare.roundTrip}</td>
+                    <td className="p-3">
+                      <button
+                        onClick={() => navigate(fare.path)}
+                        className="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition"
+                      >
+                        Visit
+                      </button>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -160,83 +162,45 @@ const Outstation = () => {
           </div>
         </section>
 
-        {/* NOTES */}
+        {/* Notes Section */}
         <div className="w-full max-w-5xl mx-auto mb-10 text-sm text-gray-700 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
-          <p className="font-bold">Toll and Parking Prices are not Included</p>
-         
-          <p>
-            <strong>Outstation Minimum:</strong> 250 KM
-          </p>
+          <p className="font-bold">Toll, Parking and State Tax Prices are not Included</p>
+          <p><strong>Outstation Minimum:</strong> 250 KM</p>
+          <p><strong>Per Day Night Charges:</strong> Rs.250</p>
+          <p><strong>Cab Charges After Destination KM Complete :</strong> Rs.13/km</p>
+          <p><strong>Above Prices Are according to 4+1 seat in Car. These prices will change according to car selection.</strong></p>
         </div>
 
-        {/* INFO SECTIONS */}
-        <div className="max-w-5xl px-6 md:px-0 mb-16">
-          <h2 className="py-4 text-3xl md:text-4xl font-bold">
-            Why choose Pick Quick Cabs for Outstation Travels
-          </h2>
-          <p className="text-lg leading-relaxed text-gray-700">
-            When booking an outstation cab online, we want the best experience —
-            on-time pickups, transparent pricing, and reliable drivers. Pick
-            Quick Cabs ensures this by reducing driver commissions and sharing
-            full ride details upfront — minimizing cancellations and ensuring
-            the best travel experience.
-          </p>
-
-          <h2 className="py-6 text-3xl md:text-4xl font-bold">
-            Affordable Outstation Cabs from anywhere in Delhi NCR
-          </h2>
-          <p className="text-lg leading-relaxed text-gray-700">
-            Our fares are transparent and 5–10% lower than others. No hidden
-            charges, no extra for pre-booking — just reliable rides at great
-            prices.
-          </p>
-
-          <h2 className="py-6 text-3xl md:text-4xl font-bold">
-            Popular Outstation Routes from Delhi
-          </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-green-600 font-medium text-lg">
-            <span>Delhi → Jaipur</span>
-            <span>Delhi → Agra</span>
-            <span>Delhi → Dehradun</span>
-            <span>Delhi → Manali</span>
-            <span>Delhi → Haridwar</span>
-          </div>
-        </div>
-      </div>
-
-      {/* FAQ SECTION */}
-      <section className="py-16 bg-gray-100">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold">
-              FAQs of Pick Quick Cabs
-            </h2>
-          </div>
-
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-md p-5 cursor-pointer transition hover:shadow-lg"
-                onClick={() => toggleFAQ(index)}
-              >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold">{faq.question}</h3>
-                  <span className="text-yellow-500">
-                    {openIndex === index ? <FaMinus /> : <FaPlus />}
-                  </span>
+        {/* FAQs Section */}
+        <section className="py-16 bg-gray-100">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-5xl font-bold">FAQs of Pick Quick Cabs</h2>
+            </div>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg shadow-md p-5 cursor-pointer transition hover:shadow-lg"
+                  onClick={() => toggleFAQ(index)}
+                >
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-lg font-semibold">{faq.question}</h3>
+                    <span className="text-yellow-500">
+                      {openIndex === index ? <FaMinus /> : <FaPlus />}
+                    </span>
+                  </div>
+                  {openIndex === index && (
+                    <p className="mt-3 text-gray-700 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
+                      {faq.answer}
+                    </p>
+                  )}
                 </div>
-
-                {openIndex === index && (
-                  <p className="mt-3 text-gray-700 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-lg">
-                    {faq.answer}
-                  </p>
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <Footer />
     </>

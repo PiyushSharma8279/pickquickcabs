@@ -6,14 +6,18 @@ const pricingData = [
     airport: "₹700",
     insideCity8: "₹1,600",
     insideCity12: "₹2,000",
-    outstation: "₹9",
+    outstationOneWay: "₹11",
+    outstationRoundTrip: "₹9",
+
   },
   {
     vehicle: "Swift Dzire",
     airport: "₹900",
     insideCity8: "₹1,900",
     insideCity12: "₹2,500",
-    outstation: "₹10.5",
+    outstationOneWay: "₹12.5",
+    outstationRoundTrip: "₹10.5",
+    
   },
 
   {
@@ -21,28 +25,36 @@ const pricingData = [
     airport: "₹1,100",
     insideCity8: "₹2,500",
     insideCity12: "₹3,000",
-    outstation: "₹14",
+    outstationOneWay: "₹16",
+    outstationRoundTrip: "₹14",
+
   },
   {
     vehicle: "Ertiga",
     airport: "₹1,200",
     insideCity8: "₹2,500",
     insideCity12: "₹3,000",
-    outstation: "₹14",
+    outstationOneWay: "₹16",
+    outstationRoundTrip: "₹14",
+
   },
   {
     vehicle: "Toyota Innova",
     airport: "₹1,500",
     insideCity8: "₹3,200",
     insideCity12: "₹4,250",
-    outstation: "₹18",
+    outstationOneWay: "₹20",
+    outstationRoundTrip: "₹18",
+
   },
   {
     vehicle: "Force Traveller",
     airport: "₹2,000*",
     insideCity8: "₹5,650*",
     insideCity12: "₹8,750*",
-    outstation: "₹25",
+    outstationOneWay: "₹27",
+    outstationRoundTrip: "₹25",
+
   },
 ];
 
@@ -61,7 +73,9 @@ export default function PricingTable() {
               <th className="p-2 border">Airport (Pick/Drop)</th>
               <th className="p-2 border">Inside City (8Hr/80KM)</th>
               <th className="p-2 border">Inside City (12Hr/120KM)</th>
-              <th className="p-2 border">Outstation (Per KM)</th>
+              <th className="p-2 border">Outstation One Way (Per KM)</th>
+              <th className="p-2 border">Outstation Round Trip (Per KM)</th>
+
             </tr>
           </thead>
           <tbody>
@@ -74,7 +88,9 @@ export default function PricingTable() {
                 <td className="p-2 border">{row.airport}</td>
                 <td className="p-2 border">{row.insideCity8}</td>
                 <td className="p-2 border">{row.insideCity12}</td>
-                <td className="p-2 border">{row.outstation}</td>
+                <td className="p-2 border">{row.outstationOneWay}</td>
+                <td className="p-2 border">{row.outstationRoundTrip}</td>
+
               </tr>
             ))}
           </tbody>
@@ -84,11 +100,13 @@ export default function PricingTable() {
         <div className="mt-4 text-sm text-gray-700">
           <p className=" font-bold">Toll and Parking Prices are not Included</p>
           <p>
-            <strong>Driver Charges (After 10PM):</strong> Rs.250
-          </p>
-          <p>
             <strong>Outstation:</strong> Min. 250KM
           </p>
+          <p>
+            <strong>Driver Charges After Booking Period Over:</strong> Rs.200/hour (Delhi NCR)
+            
+          </p>
+          <strong>Cab Charges After Destination KM Complete :</strong> Rs.13/km
         </div>
       </div>
     </>

@@ -10,6 +10,19 @@ import OutStation from "./Pages/OutStation/OutStation"
 import NoidaToChardham from './Pages/ChardhamYatra/Chardham'
 import TermsAndCondition from './Pages/TermsAndCondition/TermsAndCondition'
 import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy'
+import DelhiToDehradun from './Pages/DelhiToDehradun'
+import DelhiToRishikesh from './Pages/DelhiToRishikesh'
+import DelhiToHaridwar from './Pages/DelhiToHaridwar'
+import DelhiToNainital from './Pages/DelhiToNanital'
+import DelhiToHaldwani from './Pages/DelhiToHaldwani'
+import DelhiToRudrapur from './Pages/DelhiToRudrapur'
+import DelhiToAgra from './Pages/DelhiToAgra'
+import DelhiToMathura from './Pages/DelhiToMathura'
+import DelhiToJaipur from './Pages/DelhiToJaipur'
+import DelhiToKainchiDham from './Pages/DelhiToKainchiDham'
+import DelhiToMussoorie from './Pages/DelhiToMassoori'
+import DelhiToShimla from './Pages/DelhiToShimla'
+import DelhiToManali from './Pages/DelhiToManali'
 function App() {
   return (
     <>
@@ -25,6 +38,32 @@ function App() {
       <Route path='/char-dham-yatra-cab-service' element={<NoidaToChardham/>}/>
       <Route path='terms-and-conditions' element={<TermsAndCondition/>}/>
       <Route path='privacy-policy' element={<PrivacyPolicy/>}/>
+      <Route path='delhi-to-dehradun-taxi-service' element={<DelhiToDehradun/>}/>
+      <Route path='delhi-to-rishikesh-taxi-service' element={<DelhiToRishikesh/>}/>
+      <Route path='delhi-to-haridwar-taxi-service' element={<DelhiToHaridwar/>}/>
+      <Route path='delhi-to-nanital-taxi-service' element={<DelhiToNainital/>}/>
+      <Route path='delhi-to-haldwani-taxi-service' element={<DelhiToHaldwani/>}/>
+      <Route path='delhi-to-rudrapur-taxi-service' element={<DelhiToRudrapur/>}/>
+      <Route path='delhi-to-agra-taxi-service' element={<DelhiToAgra/>}/>
+      <Route path='delhi-to-mathura-taxi-service' element={<DelhiToMathura/>}/>
+      <Route path='delhi-to-jaipur-taxi-service' element={<DelhiToJaipur/>}/>
+      <Route path='delhi-to-kainchi-dham-taxi-service' element={<DelhiToKainchiDham/>}/>
+      <Route path='delhi-to-mussoorie-taxi-service' element={<DelhiToMussoorie/>}/>
+      <Route path='delhi-to-shimla-taxi-service' element={<DelhiToShimla/>}/>
+      <Route path='delhi-to-manali-taxi-service' element={<DelhiToManali/>}/>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
